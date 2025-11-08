@@ -1,12 +1,10 @@
 <!-- badges: start -->
 
 [![Render & Deploy
-Site](https://github.com/jhelvy/jhelvy_quarto/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/jhelvy/jhelvy_quarto/actions/workflows/main.yml)
-[![Netlify
-Status](https://api.netlify.com/api/v1/badges/e0340c5d-1307-44e4-bbeb-f1cf230d8fdc/deploy-status)](https://app.netlify.com/sites/jhelvy/deploys)
+Site](https://github.com/NazimBL/nazim-hub/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/NazimBL/nazim-hub/actions/workflows/main.yml)
 <!-- badges: end -->
 
-Source files for my [personal website](https://jhelvy.com/), built using {Quarto}(https://quarto.org/) and deployed
-with [netlify](https://www.netlify.com/).
+Source files for my [personal website](https://nazimbl.github.io/nazim-hub/), built using [Quarto](https://quarto.org/) and deployed with [GitHub Pages](https://pages.github.com/).
 
-Source code for my previous version built using the [{distill}](https://rstudio.github.io/distill/) package can be found [here](https://github.com/jhelvy/jhelvy_distill)
+This site’s structure and styling are adapted from  
+[Jeff Helveston’s Quarto website template](https://github.com/jhelvy/jhelvy_quarto),  
