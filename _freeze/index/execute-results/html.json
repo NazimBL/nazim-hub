@@ -1,0 +1,15 @@
+{
+  "hash": "9187ad5229e84904684466d5b6ad1d4a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Nazim A.Belabbaci\"\nimage: \"images/profile.jpeg\"   # replace with your image path\nexecute:\n  echo: false\n  warning: false\nabout:\n  template: trestles\n  links:\n    - text: '<i class=\"ai ai-cv fa-lg\"></i>'\n      href: cv/nazim_hub_resume_202511.pdf               # add your CV at cv/Nazim_Ahmed_CV.pdf\n    - icon: github\n      href: https://github.com/NazimBL\n    - icon: linkedin\n      href: https://www.linkedin.com/in/nazim-a-belabbaci/\n    - text: '<i class=\"ai ai-google-scholar fa-lg\"></i>'\n      href: https://scholar.google.com/citations?view_op=list_works&hl=en&user=f7QBAtEAAAAJ\n    - text: '<i class=\"ai ai-researchgate fa-lg\"></i>'\n      href: https://www.researchgate.net/profile/Nazim-Belabbaci\n    - text: '<i class=\"ai ai-orcid fa-lg\"></i>'\n      href: https://orcid.org/0009-0006-8380-9818\n    - icon: envelope\n      href: \"mailto:bellabaci.nazim@gmail.com\"\n---\n\n\n::: {.cell}\n\n:::\n\n\n### Welcome!\n\nI am Research Engineer/Scientist with a strong drive to translate technical advances into impactful healthcare solutions. Proven expertise in developing wearable technologies, conducting clinical research, and applying machine learning to enhance diagnostic and monitoring solutions. Experienced in full-stack hardware-software integration and advanced prototyping, with a growing portfolio of peer-reviewed publications and patent-pending work. Proficient in different programming languages, recognized for rapid learning, comfortable leading a team as serving as a team member.\n**Research focus**\n- Wearables & digital biomarkers  \n- Spectroscopy + ML\n  Gen AI (Diffusion Models)\n  BCI and EEG\n- Clinical ML (EHR/omics; robust, reproducible pipelines)\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

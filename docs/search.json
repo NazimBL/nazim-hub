@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "posts/hello.html",
+    "href": "posts/hello.html",
+    "title": "Hello, world",
+    "section": "",
+    "text": "First post! I’ll use this space for short notes on wearables, spectroscopy ML, and reproducible pipelines."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Coming soon."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nazim Belabbaci",
+    "section": "",
+    "text": "Welcome!\nI’m a Research Engineer/Scientist focused on AI for Health. I design ML methods and systems to quantify hydration, fatigue, and autonomic state from wearables; build 1D diffusion models for spectroscopy; and develop reproducible clinical ML pipelines.\nResearch focus\n\nWearables & digital biomarkers\n\nSpectroscopy + ML\nBCI / EEG\n\nClinical ML (EHR/omics; robust, reproducible pipelines)"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "Coming soon."
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
+    "section": "",
+    "text": "No matching items"
+  }
+]
