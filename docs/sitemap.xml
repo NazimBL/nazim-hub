@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nazimbl.github.io/nazim-hub/posts/hello.html</loc>
-    <lastmod>2025-11-06T15:14:21.513Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nazimbl.github.io/nazim-hub/projects.html</loc>
-    <lastmod>2025-11-06T15:16:22.872Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nazimbl.github.io/nazim-hub/index.html</loc>
-    <lastmod>2025-11-07T15:54:32.188Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nazimbl.github.io/nazim-hub/research.html</loc>
-    <lastmod>2025-11-06T15:16:11.013Z</lastmod>
+    <loc>https://nazimbl.github.io/nazim-hub/wearable-hydration/index.html</loc>
+    <lastmod>2025-11-10T15:12:13.771Z</lastmod>
   </url>
   <url>
     <loc>https://nazimbl.github.io/nazim-hub/blog/index.html</loc>
     <lastmod>2025-11-06T15:13:13.252Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nazimbl.github.io/nazim-hub/about.html</loc>
+    <lastmod>2025-11-09T16:24:06.811Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nazimbl.github.io/nazim-hub/index.html</loc>
+    <lastmod>2025-11-08T19:14:45.809Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nazimbl.github.io/nazim-hub/research.html</loc>
+    <lastmod>2025-11-08T19:39:10.107Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nazimbl.github.io/nazim-hub/projects.html</loc>
+    <lastmod>2025-11-10T15:38:15.718Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nazimbl.github.io/nazim-hub/posts/hello.html</loc>
+    <lastmod>2025-11-06T15:14:21.513Z</lastmod>
   </url>
 </urlset>

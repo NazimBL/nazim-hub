@@ -1,0 +1,15 @@
+{
+  "hash": "b413563457ee674d8b91402c7220f365",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Research\"\ndescription: I lead interdisciplinary research that explores relationships between technological change and factors that shape it, such as consumer behavior, market dynamics, and policy. I apply a systems engineering perspective to better understand these relationships and to inform policy, with an emphasis on accelerating transitions to cleaner technologies. I have expertise in choice modeling, survey design, programming in R, China, and the global electric vehicle industry.\npreview: images/lab/john_helveston.png\nexecute: \n  echo: false\n  message: false\n  warning: false\nformat: html \ntoc: true\ntoc-location: left\n---\n\n<!-- Remove margin under list items -->\n\n<style>\nol {\n    margin-bottom: 5px;\n}\np {\n  margin: 5px 0 0 0;\n}\n</style>\n\n\n::: {.cell}\n\n:::\n\n\n<center>\n\n[View my full CV here](cv/nazim_hub_resume_202511.pdf)\n\n`<a href=\"https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;user=f7QBAtEAAAAJ\" class=\"icon-link\" target=\"_blank\" rel=\"noopener\"><i class=\"ai ai-google-scholar\"></i> Google Scholar</a><a href=\"https://orcid.org/0009-0006-8380-9818\" class=\"icon-link\" target=\"_blank\" rel=\"noopener\"><i class=\"ai ai-orcid\"></i> ORCID</a><a href=\"https://www.researchgate.net/profile/Nazim-Belabbaci\" class=\"icon-link\" target=\"_blank\" rel=\"noopener\"><i class=\"ai ai-researchgate\"></i> Research Gate</a>`{=html}\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

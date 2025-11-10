@@ -1,0 +1,16 @@
+project:
+  type: website
+  output-dir: ../docs/wearable-hydration
+  execute-dir: project
+website:
+  title: "HydroTrack: Real-Time Hydration Monitoring"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Overview
+  page-footer:
+    left: "© 2022 Nazim A. Belabbaci"
+format:
+  html:
+    theme: cosmo
+    toc: true
