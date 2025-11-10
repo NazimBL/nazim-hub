@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2025-11-06">
 
-<title>Hello, world – nazim-hub.com</title>
+<title>HydroTrack: Spectroscopic Analysis Prototype for Real-Time Hydration Monitoring – nazim-hub.com</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -148,23 +147,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Hello, world</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">meta</div>
-  </div>
-  </div>
+<h1 class="title">HydroTrack: Spectroscopic Analysis Prototype for Real-Time Hydration Monitoring</h1>
+</div>
 
 
 
 <div class="quarto-title-meta">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">November 6, 2025</p>
-    </div>
-  </div>
   
     
   </div>
@@ -174,9 +164,90 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>First post! I’ll use this space for short notes on wearables, spectroscopy ML, and reproducible pipelines.</p>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>HydroTrack is a smartwatch prototype integrating a <strong>low-cost tri-spectral sensor</strong> for <em>real-time, non-invasive hydration monitoring</em>.<br>
+Built during my M.S. research at <strong>UMass Lowell</strong>, it combines spectroscopy and edge-deployed AI models to infer hydration status from wrist reflectance data.</p>
+<ul>
+<li><strong>AI on the edge</strong> – Random Forest and XGBoost classifiers trained on spectroscopic signals, achieving up to 95 % accuracy.<br>
+</li>
+<li><strong>Hardware</strong> – SparkFun AS7265x Triad spectroscopy sensor embedded in a DSTIKE Watch V4 (ESP32).<br>
+</li>
+<li><strong>Experiments</strong> – Calibration with lab-grade spectrometer (Hach DR3900), electrolyte-solution benchmarking, skin-hydration tests during fasting &amp; exercise.<br>
+</li>
+<li><strong>Deployment</strong> – TinyML model runs fully on-device; LEDs indicate hydration state (green = hydrated, red = dehydrated).</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/quant_chart_ta.jpg" class="img-fluid figure-img"></p>
+<figcaption>Prototype setup</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="publications" class="level2">
+<h2 class="anchored" data-anchor-id="publications">Publications</h2>
+<ul>
+<li><p><strong>Belabbaci N.A.</strong>, Alam M.A.U., <em>HydroTrack: Spectroscopic Analysis Prototype Enabling Real-Time Hydration Monitoring in Wearables</em>, IEEE EMBC 2024.<br>
+→ <a href="https://ieeexplore.ieee.org/document/10782531">Read on IEEE Xplore</a></p></li>
+<li><p><strong>Belabbaci N.A.</strong>, <em>Wearable Hydration Monitoring Technologies: A Comprehensive Review of 100+ Studies</em>, <em>JMIR mHealth and uHealth</em> 2025 ; 13 :e60569.<br>
+→ <a href="https://mhealth.jmir.org/2025/1/e60569">Read on JMIR</a></p></li>
+<li><p><strong>Master’s Thesis</strong> – <em>A Prototype Smartwatch Utilizing Spectroscopy for Real-Time Monitoring of Hydration Status</em>, UMass Lowell 2024.<br>
+→ <a href="files/Nazim_HydroTrack_Thesis.pdf">Download PDF</a></p></li>
+</ul>
+<hr>
+</section>
+<section id="methods-summary" class="level2">
+<h2 class="anchored" data-anchor-id="methods-summary">Methods Summary</h2>
+<section id="hardware-integration" class="level3">
+<h3 class="anchored" data-anchor-id="hardware-integration">Hardware Integration</h3>
+<p>The <strong>AS7265x Triad sensor</strong> captures 18 wavelengths (410 – 940 nm).<br>
+Signals are read via I²C on an ESP32 microcontroller and processed on the watch itself.</p>
+</section>
+<section id="machine-learning-pipeline" class="level3">
+<h3 class="anchored" data-anchor-id="machine-learning-pipeline">Machine-Learning Pipeline</h3>
+<ul>
+<li><strong>Preprocessing:</strong> noise filtering + Eulerian Video Magnification to amplify subtle optical variations.<br>
+</li>
+<li><strong>Models:</strong> Random Forest (84 %) and XGBoost (95 %) for 3 hydration classes – <em>hydrated</em>, <em>mid</em>, <em>dehydrated</em>.<br>
+</li>
+<li><strong>Deployment:</strong> converted to TinyML header files and executed locally on the watch.</li>
+</ul>
+</section>
+<section id="experiments" class="level3">
+<h3 class="anchored" data-anchor-id="experiments">Experiments</h3>
+<ol type="1">
+<li><strong>Electrolyte calibration</strong> – sodium/potassium solutions vs lab spectrometer.<br>
+</li>
+<li><strong>Skin hydration</strong> – pre/mid/post workout &amp; fasting sessions with 5 participants.<br>
+</li>
+<li><strong>Additional study</strong> – spectroscopy-based <em>emotion recognition</em> (83 % accuracy happy vs sad).</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="future-directions" class="level2">
+<h2 class="anchored" data-anchor-id="future-directions">Future Directions</h2>
+<ul>
+<li><strong>Clinical validation</strong> against MX3 Hydration Testing System<br>
+</li>
+<li><strong>Expanded datasets</strong> &amp; defined optical biomarkers<br>
+</li>
+<li><strong>Motion artifact filtering</strong> via gyroscope fusion<br>
+</li>
+<li><strong>Emotion analytics</strong> extension to multi-class affective states</li>
+</ul>
+<hr>
+</section>
+<section id="citation" class="level2">
+<h2 class="anchored" data-anchor-id="citation">Citation</h2>
+<blockquote class="blockquote">
+<p>Nazim A. Belabbaci, <em>HydroTrack: Spectroscopic Analysis Prototype Enabling Real-Time Hydration Monitoring in Wearables</em>, IEEE EMBC 2024.</p>
+</blockquote>
+<hr>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

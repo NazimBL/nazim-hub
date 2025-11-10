@@ -1,31 +1,45 @@
 [
   {
-    "objectID": "posts/hello.html",
-    "href": "posts/hello.html",
-    "title": "Hello, world",
+    "objectID": "wearable-hydration/index.html",
+    "href": "wearable-hydration/index.html",
+    "title": "HydroTrack: Spectroscopic Analysis Prototype for Real-Time Hydration Monitoring",
     "section": "",
-    "text": "First post! I’ll use this space for short notes on wearables, spectroscopy ML, and reproducible pipelines."
+    "text": "HydroTrack is a smartwatch prototype integrating a low-cost tri-spectral sensor for real-time, non-invasive hydration monitoring.\nBuilt during my M.S. research at UMass Lowell, it combines spectroscopy and edge-deployed AI models to infer hydration status from wrist reflectance data.\n\nAI on the edge – Random Forest and XGBoost classifiers trained on spectroscopic signals, achieving up to 95 % accuracy.\n\nHardware – SparkFun AS7265x Triad spectroscopy sensor embedded in a DSTIKE Watch V4 (ESP32).\n\nExperiments – Calibration with lab-grade spectrometer (Hach DR3900), electrolyte-solution benchmarking, skin-hydration tests during fasting & exercise.\n\nDeployment – TinyML model runs fully on-device; LEDs indicate hydration state (green = hydrated, red = dehydrated).\n\n\n\n\nPrototype setup"
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "wearable-hydration/index.html#overview",
+    "href": "wearable-hydration/index.html#overview",
+    "title": "HydroTrack: Spectroscopic Analysis Prototype for Real-Time Hydration Monitoring",
     "section": "",
-    "text": "Coming soon."
+    "text": "HydroTrack is a smartwatch prototype integrating a low-cost tri-spectral sensor for real-time, non-invasive hydration monitoring.\nBuilt during my M.S. research at UMass Lowell, it combines spectroscopy and edge-deployed AI models to infer hydration status from wrist reflectance data.\n\nAI on the edge – Random Forest and XGBoost classifiers trained on spectroscopic signals, achieving up to 95 % accuracy.\n\nHardware – SparkFun AS7265x Triad spectroscopy sensor embedded in a DSTIKE Watch V4 (ESP32).\n\nExperiments – Calibration with lab-grade spectrometer (Hach DR3900), electrolyte-solution benchmarking, skin-hydration tests during fasting & exercise.\n\nDeployment – TinyML model runs fully on-device; LEDs indicate hydration state (green = hydrated, red = dehydrated).\n\n\n\n\nPrototype setup"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Nazim Belabbaci",
-    "section": "",
-    "text": "Welcome!\nI’m a Research Engineer/Scientist focused on AI for Health. I design ML methods and systems to quantify hydration, fatigue, and autonomic state from wearables; build 1D diffusion models for spectroscopy; and develop reproducible clinical ML pipelines.\nResearch focus\n\nWearables & digital biomarkers\n\nSpectroscopy + ML\nBCI / EEG\n\nClinical ML (EHR/omics; robust, reproducible pipelines)"
+    "objectID": "wearable-hydration/index.html#publications",
+    "href": "wearable-hydration/index.html#publications",
+    "title": "HydroTrack: Spectroscopic Analysis Prototype for Real-Time Hydration Monitoring",
+    "section": "Publications",
+    "text": "Publications\n\nBelabbaci N.A., Alam M.A.U., HydroTrack: Spectroscopic Analysis Prototype Enabling Real-Time Hydration Monitoring in Wearables, IEEE EMBC 2024.\n→ Read on IEEE Xplore\nBelabbaci N.A., Wearable Hydration Monitoring Technologies: A Comprehensive Review of 100+ Studies, JMIR mHealth and uHealth 2025 ; 13 :e60569.\n→ Read on JMIR\nMaster’s Thesis – A Prototype Smartwatch Utilizing Spectroscopy for Real-Time Monitoring of Hydration Status, UMass Lowell 2024.\n→ Download PDF"
   },
   {
-    "objectID": "research.html",
-    "href": "research.html",
-    "title": "Research",
-    "section": "",
-    "text": "Coming soon."
+    "objectID": "wearable-hydration/index.html#methods-summary",
+    "href": "wearable-hydration/index.html#methods-summary",
+    "title": "HydroTrack: Spectroscopic Analysis Prototype for Real-Time Hydration Monitoring",
+    "section": "Methods Summary",
+    "text": "Methods Summary\n\nHardware Integration\nThe AS7265x Triad sensor captures 18 wavelengths (410 – 940 nm).\nSignals are read via I²C on an ESP32 microcontroller and processed on the watch itself.\n\n\nMachine-Learning Pipeline\n\nPreprocessing: noise filtering + Eulerian Video Magnification to amplify subtle optical variations.\n\nModels: Random Forest (84 %) and XGBoost (95 %) for 3 hydration classes – hydrated, mid, dehydrated.\n\nDeployment: converted to TinyML header files and executed locally on the watch.\n\n\n\nExperiments\n\nElectrolyte calibration – sodium/potassium solutions vs lab spectrometer.\n\nSkin hydration – pre/mid/post workout & fasting sessions with 5 participants.\n\nAdditional study – spectroscopy-based emotion recognition (83 % accuracy happy vs sad)."
+  },
+  {
+    "objectID": "wearable-hydration/index.html#future-directions",
+    "href": "wearable-hydration/index.html#future-directions",
+    "title": "HydroTrack: Spectroscopic Analysis Prototype for Real-Time Hydration Monitoring",
+    "section": "Future Directions",
+    "text": "Future Directions\n\nClinical validation against MX3 Hydration Testing System\n\nExpanded datasets & defined optical biomarkers\n\nMotion artifact filtering via gyroscope fusion\n\nEmotion analytics extension to multi-class affective states"
+  },
+  {
+    "objectID": "wearable-hydration/index.html#citation",
+    "href": "wearable-hydration/index.html#citation",
+    "title": "HydroTrack: Spectroscopic Analysis Prototype for Real-Time Hydration Monitoring",
+    "section": "Citation",
+    "text": "Citation\n\nNazim A. Belabbaci, HydroTrack: Spectroscopic Analysis Prototype Enabling Real-Time Hydration Monitoring in Wearables, IEEE EMBC 2024."
   },
   {
     "objectID": "blog/index.html",
@@ -33,5 +47,40 @@
     "title": "Blog",
     "section": "",
     "text": "No matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Welcome! I am a versatile Research Engineer/Scientist with a solid background in electronics, embedded systems, and software/hardware integration. My work focuses on applying AI and biosensing to develop scalable wearable health monitoring systems. I am always exploring innovative ways to translate technological advances into meaningful healthcare impact.\n\nShort Bio\nFluent in multiple human and programming languages, I hold an M.S. in Computer Science from the University of Massachusetts Lowell, an M.Eng. in Computer Engineering, and a B.S. in Electrical and Electronics Engineering from INELEC. I am now a Ph.D. Candidate and Research Assistant at UMass Lowell’s Miner School of Computer and Information Sciences. Before starting my PhD, I worked as an Embedded Software Engineer and was co-founder of Deadline Store and BNBE Technologies\n\n\nBrief Summary on My Research\nmy research focuses on understanding biomedical phenomenon, what biomarker help us identify differences in multiple states/classes/disease; and use ai identify patterns. Understanding biomedical concepts, biomarkers, identify patterns and then develop device or interface with appropriate sensors for health monitoring and health diagnosis.\nMy work spans from data collection, designing device, sensor integration , wearable to collect specific biomarker, to analyzing data, curve fitting, pattern recognition , ai development, to real time deployment.\nhere is where i dive in talk about my phd , whole ecosystem thing, synthetic data using gen ai , to augment biomedical scarcity . perfect environment of collecting data, analyzing, using knowledge to fill the gap.\nI have recently focused on 2 domains : Spectroscopy (because ?), data available via wearable (cause i believe it is the future in health and i like it ?), also wearables are cool, tehre is something about running complex algorithm on small portable device that get me a kick ( sorry).\nYou can see more about my research on my Research Page.\n\n\nEntrepreneurship & Business Ventures\n\n\n\n\nHex stickers for R packages and courses I’ve developed\n\n\n\nI use and contribute to  in most of my research and teaching. One specific category of research is choice modeling. I use choice-based conjoint surveys to measure people’s preferences for a variety of technologies and policies. I have developed several packages for implementing conjoint in , including {logitr} for estimating multinomial and mixed logit models with preference space and “willingness-to-pay” space utility parameterizations, and {cbcTools} for designing and conducting power analyses for choice-based conjoint surveys. I also developed the {surveydown} package along with Pingfan Hu and Bogdan Bunea for making markdown-based surveys with Quarto shiny documents. I also co-authored the {renderthis} package with Garrick Aden-Buie for rendering media (e.g., xaringan slides) into multiple different formats. Finally , I also teach multiple programming and data analytics courses in , and all of my course materials are built using , including course websites and slides.\nYou can see more of my  projects and source code on my GitHub page: https://github.com/jhelvy/\n\n\nQuant and Stock market\n\n\n\n\nain’t this pretty ?\n\n\n\nI began studying Chinese during my second year as an undergraduate engineering student at Virginia Tech in the fall of 2006. The next spring, I received the Horton Scholarship, which provided a unique opportunity to travel to China and complete an educational project of my own design. I traveled to Dalian in the summer of 2008 to study language and culture at Liaoning Normal University, then I moved to Shanghai in the fall to gain international engineering experience as an intern in General Electric’s Advanced Wind Turbine Operations division. The project opened my eyes to the many forces that shape the adoption of emerging technologies, in particular the importance of policy and economics. After returning to the U.S., I was awarded a Critical Language Scholarship by the U.S. Department of State to study Chinese in Harbin, China during the summer of 2009, and I have since returned to China numerous times for work or research, including an internship at the Innovation Center for Energy and Transportation (iCET) and as a 2014 East Asia Pacific Summer Institutes (EAPSI) Fellow supported by the U.S. National Science Foundation. Today, I continue to use my language skills and experience in China while conducting interdisciplinary research in China.\nif you made it till here, in this age of constant stimulation, thank you !\nNazim."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nazim Belabbaci",
+    "section": "",
+    "text": "Welcome!\nI am a versatile Research Engineer/Scientist with a solid background in electronics, embedded systems, and software/hardware integration. My work focuses on applying AI and biosensing to develop scalable wearable health monitoring systems. I am always exploring innovative ways to translate technological advances into meaningful healthcare impact. Research focus\n\nWearable & Digital Biomarkers\n\nComputational Spectroscopy & Biomedical Sensing\nNeurotechnology & Brain–Computer Interfaces\n\nComputational Genomics & Bioinformatics\nClinical Data Science (EHR/omics; robust, reproducible pipelines)"
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research",
+    "section": "",
+    "text": "View my full CV here\n Google Scholar ORCID Research Gate"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Wearable Hydration Monitoring\n\nR package for fast estimation of multinomial and mixed logit models with preference space and willingness to pay space utility parameterizations.\n\n\n\n\n\n\n\n\ncbcTools\n\nR package with tools for designing choice based conjoint (cbc) survey experiments and conducting power analyses.\n\n\n\n\n\n\n\n\nsurveydown\n\nR package for generating markdown-based surveys using Quarto shiny documents.\n\n\n\n\n\n\n\n\nWireless Corne\n\nBuild log and gallery of how I built my wireless Corne keyboard.\n\n\n\n\n\n\n\n\nThe Distillery\n\nDistill website showcasing other distill websites and blogs.\n\n\n\n\n\n\n\n\noica\n\nR data package with tidy formatted data on vehicle production and sales from the International Organization of Motor Vehicle Manufacturers.\n\n\n\n\n\n\n\n\nmagaScreener\n\nTool for analyzing documents for specific MAGA-targeted keywords, intended to be used to help identify words that might get screened by the federal government.\n\n\n\n\n\n\n\n\nrenderthis\n\nR package for rendering slides and other media into different formats, including html, pdf, png, gif, pptx, and mp4.\n\n\n\n\n\n\n\n\ncharts\n\nBunch of reproducible charts. All data and source code are available at https://github.com/jhelvy/charts\n\n\n\n\n\n\n\n\nGW Coders\n\nStudy group that brings together students and faculty to apply computational and data analytics skills in research.\n\n\n\n\n\n\n\n\nsplitKbCompare\n\nInteractive R Shiny app for comparing layouts of different split mechanical keyboards. Built for the ergonomic keyboard community r/ErgoMechKeyboards.\n\n\n\n\n\n\n\n\nλέξις (lexis)\n\nTheme for xaringan slides with a light gray background, \"Fira Sans Condensed\" for headers, “Roboto” for body text.\n\n\n\n\n\n\n\n\nProgramming for Analytics in R\n\nOpen source text book on the fundamentals of programming and working with data in R.\n\n\n\n\n\n\n\n\nformr4conjoint\n\nTemplate for how to create a choice-based conjoint survey using the formr survey platform.\n\n\n\n\n\n\n\n\nIris Rev 2\n\nBuild log and gallery of how I built my Iris Rev 2 keyboard."
+  },
+  {
+    "objectID": "posts/hello.html",
+    "href": "posts/hello.html",
+    "title": "Hello, world",
+    "section": "",
+    "text": "First post! I’ll use this space for short notes on wearables, spectroscopy ML, and reproducible pipelines."
   }
 ]

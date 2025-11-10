@@ -1,4 +1,44 @@
 ---
 title: "Research"
+description: I lead interdisciplinary research that explores relationships between technological change and factors that shape it, such as consumer behavior, market dynamics, and policy. I apply a systems engineering perspective to better understand these relationships and to inform policy, with an emphasis on accelerating transitions to cleaner technologies. I have expertise in choice modeling, survey design, programming in R, China, and the global electric vehicle industry.
+preview: images/lab/john_helveston.png
+execute: 
+  echo: false
+  message: false
+  warning: false
+format: html 
+toc: true
+toc-location: left
 ---
-Coming soon.
+
+<!-- Remove margin under list items -->
+
+<style>
+ol {
+    margin-bottom: 5px;
+}
+p {
+  margin: 5px 0 0 0;
+}
+</style>
+
+```{r setup}
+source("_common.R")
+
+# Update local copy of "pubs" Google sheet
+# write_csv(get_pubs(), here::here('content', 'pubs.csv'))
+
+# Get local copy of pubs
+# pubs <- read_csv(here::here('content', 'pubs.csv'))
+
+# Get pubs from Google sheet
+pubs <- get_pubs()
+```
+
+<center>
+
+[View my full CV here](cv/nazim_hub_resume_202511.pdf)
+
+`r htmltools::HTML(paste0(icon_link(icon = "ai ai-google-scholar", text = "Google Scholar", url  = "https://scholar.google.com/citations?view_op=list_works&hl=en&user=f7QBAtEAAAAJ"), icon_link(icon = "ai ai-orcid", text = "ORCID", url  = "https://orcid.org/0009-0006-8380-9818"), icon_link(icon = "ai ai-researchgate", text = "Research Gate", url = "https://www.researchgate.net/profile/Nazim-Belabbaci")))`
+
+

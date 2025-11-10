@@ -27,11 +27,11 @@ about:
 
 ### Welcome!
 
-I’m a Research Engineer/Scientist focused on AI for Health. I design ML methods and systems to quantify hydration, fatigue, and autonomic state from **wearables**; build **1D diffusion models** for spectroscopy; and develop **reproducible clinical ML** pipelines.
-
+I am a versatile Research Engineer/Scientist with a solid background in electronics, embedded systems, and software/hardware integration. My work focuses on applying AI and biosensing to develop scalable wearable health monitoring systems. I am always exploring innovative ways to translate technological advances into meaningful healthcare impact.
 **Research focus**
 
-- Wearables & digital biomarkers  
-- Spectroscopy + ML 
-- BCI / EEG  
-- Clinical ML (EHR/omics; robust, reproducible pipelines)
+- Wearable & Digital Biomarkers  
+- Computational Spectroscopy & Biomedical Sensing 
+- Neurotechnology & Brain–Computer Interfaces  
+- Computational Genomics & Bioinformatics
+- Clinical Data Science (EHR/omics; robust, reproducible pipelines)

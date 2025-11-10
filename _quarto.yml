@@ -5,21 +5,23 @@ project:
   render:
     - index.qmd
     - research.qmd
+    - about.qmd
     - projects.qmd
     - blog/index.qmd
     - posts/*.qmd
+    - wearable-hydration
 
 website:
   title: "nazim-hub.com"
-  description: "AI for health monitoring: wearables, spectroscopy, and clinical ML."
+  description: "I am a versatile Research Engineer/Scientist with a solid background in electronics, embedded systems, and software/hardware integration. My work focuses on applying AI and biosensing to develop scalable wearable health monitoring systems. I am always exploring innovative ways to translate technological advances into meaningful healthcare impact."
   site-url: "https://nazimbl.github.io/nazim-hub/"
   repo-url: "https://github.com/NazimBL/nazim-hub"
   search: true
 
   navbar:
-    left:
+    right:
       - text: "About"
-        href: index.qmd
+        href: about.qmd
       - text: "Research"
         href: research.qmd
       - text: "Projects"
