@@ -1,6 +1,6 @@
 ---
 title: "HydroTrack: Spectroscopic Analysis Prototype for Real-Time Hydration Monitoring"
-image: images/quant_chart_ta.jpg
+image: quant_chart_ta.jpg
 ---
 
 ## Overview
@@ -13,7 +13,7 @@ Built during my M.S. research at **UMass Lowell**, it combines spectroscopy and 
 - **Experiments** – Calibration with lab-grade spectrometer (Hach DR3900), electrolyte-solution benchmarking, skin-hydration tests during fasting & exercise.  
 - **Deployment** – TinyML model runs fully on-device; LEDs indicate hydration state (green = hydrated, red = dehydrated).  
 
-![Prototype setup](images/quant_chart_ta.jpg)
+![Prototype setup](quant_chart_ta.jpg)
 
 ---
 

@@ -1,6 +1,0 @@
----
-title: "Hello, world"
-date: 2025-11-06
-categories: [meta]
----
-First post! I’ll use this space for short notes on wearables, spectroscopy ML, and reproducible pipelines.

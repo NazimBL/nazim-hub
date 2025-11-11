@@ -1,5 +1,5 @@
 title,src,url,description,tags
-Wearable Hydration Monitoring,images/hex/logitr.png,https://NazimBL.github.io/nazim-hub/wearable-hydration/,R package for fast estimation of multinomial and mixed logit models with preference space and willingness to pay space utility parameterizations.,R; Software
+Wearable Hydration Monitoring,images/hex/logitr.png,wearable-hydration/,R package for fast estimation of multinomial and mixed logit models with preference space and willingness to pay space utility parameterizations.,R; Software
 cbcTools,images/hex/cbcTools.png,https://jhelvy.github.io/cbcTools/,R package with tools for designing choice based conjoint (cbc) survey experiments and conducting power analyses.,R; Software
 surveydown,images/hex/surveydown.png,https://surveydown.org/,R package for generating markdown-based surveys using Quarto shiny documents.,R; Software
 Wireless Corne,images/wireless_corne.jpeg,https://github.com/jhelvy/wireless-corne/,Build log and gallery of how I built my wireless Corne keyboard.,Keyboards

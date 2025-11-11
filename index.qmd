@@ -27,11 +27,5 @@ about:
 
 ### Welcome!
 
-I am a versatile Research Engineer/Scientist with a solid background in electronics, embedded systems, and software/hardware integration. My work focuses on applying AI and biosensing to develop scalable wearable health monitoring systems. I am always exploring innovative ways to translate technological advances into meaningful healthcare impact.
-**Research focus**
+I am a Research Engineer/Scientist with a solid background in electronics, embedded systems, and software/hardware integration. My work focuses on applying AI and biosensing to develop scalable wearable health monitoring systems. I am always exploring innovative ways to translate technological advances into meaningful healthcare impact.
 
-- Wearable & Digital Biomarkers  
-- Computational Spectroscopy & Biomedical Sensing 
-- Neurotechnology & Brain–Computer Interfaces  
-- Computational Genomics & Bioinformatics
-- Clinical Data Science (EHR/omics; robust, reproducible pipelines)

@@ -1,7 +1,8 @@
 project:
   type: website
-  output-dir: ../docs/wearable-hydration
+  output-dir: ../docs/wearable-hydration   # <- puts files in the published docs/
   execute-dir: project
+
 website:
   title: "HydroTrack: Real-Time Hydration Monitoring"
   navbar:
@@ -9,7 +10,8 @@ website:
       - href: index.qmd
         text: Overview
   page-footer:
-    left: "© 2022 Nazim A. Belabbaci"
+    left: "© 2025 Nazim A. Belabbaci"
+
 format:
   html:
     theme: cosmo
