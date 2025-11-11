@@ -1,0 +1,8 @@
+---
+title: "Hello, world"
+description: "First post! I’ll use this space for short notes, stay tuned !"
+date: 2025-11-11
+categories: [quarto, research, updates]
+image: figure.png     # optional; shows on cards if present
+draft: false
+---

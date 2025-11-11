@@ -1,7 +1,5 @@
 ---
 title: "Research"
-description: I lead interdisciplinary research that explores relationships between technological change and factors that shape it, such as consumer behavior, market dynamics, and policy. I apply a systems engineering perspective to better understand these relationships and to inform policy, with an emphasis on accelerating transitions to cleaner technologies. I have expertise in choice modeling, survey design, programming in R, China, and the global electric vehicle industry.
-preview: images/lab/john_helveston.png
 execute: 
   echo: false
   message: false
@@ -10,7 +8,15 @@ format: html
 toc: true
 toc-location: left
 ---
+I have worked in multiple labs and collaborated with researchers from diverse discipline. 
+My work centers on wearable sensing, designing and analyzing data from portable devices that measure physiological signals in real time. I’m particularly interested in running AI models on embedded hardware, bridging the gap between sensing and intelligent on-device computation.
 
+I also conduct computational research using high-performance computing (HPC) to analyze large-scale datasets such as genomics, EHR, and spectroscopy data. 
+
+My Ph.D. thesis involves an integrated framework that addresses two critical challenges in biomedical AI: data scarcity and poor generalization. My hypothesis is that by combining domain knowledge, hardware–AI co-design, and generative models, we can create synthetic biomedical data to enhance sensing + modeling.
+My main application is a continuation of my Master's work : A non-invasive wearable Hydration Tracking device.
+
+You can explore these projects in more detail on my [Projects Page](projects.qmd).
 <!-- Remove margin under list items -->
 
 <style>
@@ -34,6 +40,15 @@ source("_common.R")
 # Get pubs from Google sheet
 pubs <- get_pubs()
 ```
+
+
+**Research focus**
+
+- Wearables & Digital Biomarkers  
+- Computational Spectroscopy & Biomedical Sensing 
+- Neurotechnology & Brain–Computer Interfaces  
+- Computational Genomics & Bioinformatics
+- Clinical Data Science (EHR/omics; robust, reproducible pipelines)
 
 <center>
 

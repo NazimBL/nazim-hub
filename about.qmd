@@ -13,23 +13,19 @@ execute:
 source("_common.R")
 ```
 
-Welcome! I am a versatile Research Engineer/Scientist with a solid background in electronics, embedded systems, and software/hardware integration. My work focuses on applying AI and biosensing to develop scalable wearable health monitoring systems. I am always exploring innovative ways to translate technological advances into meaningful healthcare impact.
+Welcome! I am a researcher, engineer, scientist, (aspiring) entrepreneur and soon to be PhD. See my [cv](cv/nazim_hub_resume_202511.pdf) for more details
 
 # Short Bio
 
-Fluent in multiple human and programming languages, I hold an M.S. in Computer Science from the University of Massachusetts Lowell, an M.Eng. in Computer Engineering, and a B.S. in Electrical and Electronics Engineering from INELEC.
-I am now a Ph.D. Candidate and Research Assistant at UMass Lowell’s [Miner School of Computer and Information Sciences](https://www.uml.edu/sciences/computer-science/). Before starting my PhD, I worked as an Embedded Software Engineer and was co-founder of Deadline Store and BNBE Technologies
+Fluent in both human and programming languages, Nazim holds a B.S. in Electrical and Electronics Engineering and an M.Eng. in Computer Engineering from the University of Boumerdès [Institute of Electrical and Electronics Engineering](https://igee.univ-boumerdes.dz/En/index.html). He worked as an Embedded Software Engineer and later co-founded Deadline Technologies and Deadline Store, gaining hands-on experience in prototyping and product development. After completing a year of biomedical engineering and research studies at the [University of North Dakota](https://engineering.und.edu/academics/biomedical/index.html), he joined the [University of Massachusetts Lowell](https://www.uml.edu/sciences/computer-science/), where he earned an M.S. in Computer Science and is now a Ph.D. Candidate and Research Assistant. His research lies at the intersection of embedded systems, artificial intelligence, and biomedical sensing.
+
+
 
 # Brief Summary on My Research 
 
-my research focuses on understanding biomedical phenomenon, what biomarker help us identify differences in multiple states/classes/disease; and use ai identify patterns. Understanding biomedical concepts, biomarkers, identify patterns and then develop device or interface with appropriate sensors for health monitoring and health diagnosis.
+My research focuses on understanding biomedical phenomena and identifying key biomarkers that distinguish physiological states, behaviors, or disease conditions. I apply artificial intelligence (coupled with this understandings not as a black box) to uncover meaningful patterns in complex health data. My work spans the full pipeline: from designing and prototyping sensor-integrated wearable devices for biomarker acquisition, to data analysis, modeling, and real-time AI deployment. 
 
-My work spans from data collection, designing device, sensor integration , wearable to collect specific biomarker, to analyzing data, curve fitting, pattern recognition , ai development, to real time deployment. 
-
-here is where i dive in talk about my phd , whole ecosystem thing, synthetic data using gen ai , to augment biomedical scarcity . perfect environment of collecting data, analyzing, using knowledge to fill the gap. 
-
-I have recently focused on 2 domains : Spectroscopy (because ?), data available via wearable (cause i believe it is the future in health and i like it ?), also wearables are cool, tehre is something about running complex algorithm on small portable device  that get me a kick ( sorry).
-
+I have expertise in electronics design, embedded systems, data science, machine learning, and generative AI (diffusion models). I develop computational and edge-AI solutions for health monitoring and diagnosis.
 You can see more about my research on my [Research Page](research.qmd).
 
 # Entrepreneurship & Business Ventures
