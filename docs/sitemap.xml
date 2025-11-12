@@ -1,47 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nazimbl.github.io/nazim-hub/wearable-hydration/index.html</loc>
-    <lastmod>2025-11-10T16:18:10.091Z</lastmod>
+    <loc>https://nazimbl.github.io/nazim-hub/projects/wearable-hydration/index.html</loc>
+    <lastmod>2025-11-12T20:55:47.204Z</lastmod>
   </url>
   <url>
     <loc>https://nazimbl.github.io/nazim-hub/blog/2025-11-11-stay-tuned/index.html</loc>
-    <lastmod>2025-11-11T15:38:36.614Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nazimbl.github.io/nazim-hub/blog/2023-02-28-parameterized-pdfs-with-quarto/index.html</loc>
-    <lastmod>2025-11-06T02:54:26.711Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nazimbl.github.io/nazim-hub/blog/2021-05-04-expand-your-productivity-with-espanso/index.html</loc>
-    <lastmod>2025-11-06T02:54:26.312Z</lastmod>
+    <lastmod>2025-11-11T19:52:52.644Z</lastmod>
   </url>
   <url>
     <loc>https://nazimbl.github.io/nazim-hub/projects.html</loc>
-    <lastmod>2025-11-10T15:38:15.718Z</lastmod>
+    <lastmod>2025-11-12T22:07:22.221Z</lastmod>
   </url>
   <url>
     <loc>https://nazimbl.github.io/nazim-hub/research.html</loc>
-    <lastmod>2025-11-11T19:39:27.028Z</lastmod>
+    <lastmod>2025-11-11T19:52:52.985Z</lastmod>
   </url>
   <url>
     <loc>https://nazimbl.github.io/nazim-hub/index.html</loc>
-    <lastmod>2025-11-11T19:40:08.949Z</lastmod>
+    <lastmod>2025-11-12T16:16:00.060Z</lastmod>
   </url>
   <url>
     <loc>https://nazimbl.github.io/nazim-hub/about.html</loc>
-    <lastmod>2025-11-11T18:20:08.743Z</lastmod>
+    <lastmod>2025-11-11T19:52:52.643Z</lastmod>
   </url>
   <url>
     <loc>https://nazimbl.github.io/nazim-hub/blog/index.html</loc>
-    <lastmod>2025-11-11T15:36:45.939Z</lastmod>
+    <lastmod>2025-11-11T19:52:52.645Z</lastmod>
   </url>
   <url>
-    <loc>https://nazimbl.github.io/nazim-hub/blog/2021-10-19-monte-carlo-bridge-game/index.html</loc>
-    <lastmod>2025-11-06T02:54:26.679Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nazimbl.github.io/nazim-hub/posts/hello.html</loc>
-    <lastmod>2025-11-11T15:08:53.435Z</lastmod>
+    <loc>https://nazimbl.github.io/nazim-hub/projects/muse-bci/index.html</loc>
+    <lastmod>2025-11-12T20:55:47.204Z</lastmod>
   </url>
 </urlset>

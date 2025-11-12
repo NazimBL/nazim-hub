@@ -2,7 +2,7 @@
 ---
 title: Projects
 description: A collection of projects that may or may not be related to my research.
-preview: images/lab/john_helveston_circle.png
+preview: images/circular_crop_pdp.drawio.png
 execute: 
   echo: false
   message: false
