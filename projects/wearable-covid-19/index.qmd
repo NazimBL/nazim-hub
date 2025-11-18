@@ -1,0 +1,238 @@
+---
+title: "Early Detection of COVID-19 Using Wearable Device Data"
+subtitle: "From sliding-window modeling to award-winning startup concept"
+description: >
+  Technical and entrepreneurial work on early COVID-19 detection using wearable
+  physiological data, combining sliding-window modeling, public datasets, and
+  startup-focused validation.
+page-layout: full
+toc: false
+---
+
+## Overview
+
+In this project, I explored whether **physiological data from consumer wearable devices**  
+(heart rate, heart rate variability, sleep, activity, etc.) can be used to **predict COVID-19 infection before symptom onset**.
+
+I:
+
+- Implemented a **sliding-window algorithm** on publicly available wearable datasets  
+- Achieved **early detection performance of around 80% up to ~5 days before symptom onset** (proof-of-concept level)  
+- Built an **end-to-end pipeline** from data ingestion to anomaly detection  
+- Turned the work into an **award-winning startup concept**, winning the **Big Idea Challenge** at the University of North Dakota and reaching the finals of the **Middleton School of Entrepreneurship business plan competition**
+
+This page focuses on the **technical and research side**, with a snapshot of the entrepreneurial journey that grew around it.
+
+---
+
+## Problem Background
+
+During the COVID-19 pandemic, most screening relied on:
+
+- Spot checks (temperature, pulse oximetry)
+- Lab tests (PCR, antigen)
+- Self-reported symptoms
+
+These are often:
+
+- **Late** (after symptoms appear)  
+- **Infrequent** (once a day, or only when people feel sick)  
+- Sometimes **inconvenient or expensive**
+
+At the same time, many people already wear devices that continuously capture signals closely tied to early illness:
+
+- Resting heart rate (RHR)
+- Heart rate variability (HRV)
+- Sleep disruption
+- Activity patterns
+
+Previous studies have shown that changes in these metrics can precede SARS-CoV-2 symptom onset by several days. My goal was to **turn these ideas into a concrete, reproducible modeling pipeline**, and then explore what a **real product** around this might look like.
+
+---
+
+## Technical Approach
+
+### Data & Signals
+
+I worked with **publicly available wearable datasets** where:
+
+- Participants wore smartwatches or similar devices for multiple months  
+- The data included **RHR, HRV, steps, and sleep** metrics
+- COVID-19 infection dates and symptom onset days were known or approximated
+
+This allowed me to:
+
+- Align time series around infection (“day 0” = symptom onset / diagnosis)
+- Study patterns in the **days leading up to infection**
+- Prototype detection algorithms without needing to run my own large prospective study
+
+### Sliding-Window Modeling
+
+The core of the project is a **sliding-window anomaly detection algorithm**, implemented in Python and shared (in its current form) here:
+
+- **GitHub (early detection pipeline):**  
+  <https://github.com/NazimBL/Covid-19-Early-Detection>
+
+Conceptually, the pipeline:
+
+1. **Preprocesses the time-series data**
+   - Normalize signals (e.g., resting heart rate deviations from personal baseline)
+   - Handle missing data and noisy segments
+
+2. **Slices the data into overlapping windows**
+   - Windows of fixed length (e.g., several days)
+   - Slide forward one day at a time
+   - Each window is labeled relative to infection status (pre-infection, infection, or healthy period)
+
+3. **Extracts features per window**
+   - Baseline-adjusted RHR
+   - Short-term and long-term HRV statistics
+   - Sleep duration and interruptions
+   - Activity changes (e.g., steps)
+
+4. **Detects anomalies**
+   - Compares each window to that person’s usual patterns
+   - Flags periods where signals deviate significantly
+   - Aggregates anomalies to mark potential “early warning” zones
+
+5. **Evaluates performance**
+   - Measures how often warning periods overlap with the days leading up to infection
+   - Reports sensitivity/recall for detecting infection in advance
+   - Compares performance across different feature sets (RHR only vs. multi-signal)
+
+The modeling approach is directly inspired by prior work (e.g., RHR-Diff and HROS-AD style methods) but focuses on **multi-signal integration** and **sliding-window framing** as a clean way to think about early detection.
+
+### Results (Proof-of-Concept)
+
+Within the limitations of the public datasets and the prototype pipeline, the approach achieved:
+
+- **Around 80% early detection performance** in identifying aberrant patterns leading up to infection,  
+- With **detection windows up to ~5 days before symptom onset** in many cases.
+
+These results are **proof-of-concept**, not clinical-grade, but they strongly support the idea that **wearables can be used as a continuous, passive “early warning” layer** for COVID-19 and, more broadly, other infections.
+
+---
+
+## Implementation Details
+
+The current public repo focuses on:
+
+- Data preprocessing & feature extraction  
+- Sliding-window logic  
+- Basic anomaly detection and evaluation
+
+Tech stack:
+
+- Python / scientific stack (NumPy, pandas, etc.)
+- Jupyter-style exploratory scripts
+- Clear separation of:
+  - Data loading
+  - Feature computation
+  - Evaluation
+
+While the repo still needs cleanup and documentation upgrades, it already shows:
+
+- How to **turn raw wearable time series into model-ready features**
+- How to **align data relative to infection events**
+- How to **prototype and iterate on early detection strategies**
+
+---
+
+## From Model to Concept: Entrepreneurial Journey
+
+Although this started as a research exercise, it quickly grew into a **startup-oriented concept**.
+
+### Big Idea Challenge – 1st Prize
+
+I used this project to participate in the **Big Idea Challenge** at the University of North Dakota and won **first place**.
+
+In that context, I:
+
+- Defined the product as a **digital health platform** that:
+  - Integrates with existing wearables
+  - Computes early-risk scores for COVID-like infections
+  - Provides dashboards for users and potentially clinicians
+- Highlighted key differentiators:
+  - Focus on **pre-symptomatic detection**, not just monitoring
+  - Ability to integrate new signals (temperature, SpO₂) as devices evolve
+  - Potential extension beyond COVID-19 to broader infectious diseases
+- Presented:
+  - A **business model** (subscription / B2B2C SaaS)
+  - A rough **product roadmap** (from proof-of-concept to validated medical device)
+  - Early thoughts about **regulatory and clinical validation**
+
+Some of the slides I used in that pitch included:
+
+- An “**80% prediction 5 days early**” result summary  
+- A **market overview** of the wearable and remote patient monitoring space  
+- A **competition and unique value proposition (UVP)** slide showing how this sits next to Apple, Google, and other digital health companies  
+- A **roadmap** slide outlining steps toward integrating with third-party devices, developing dedicated hardware, and pursuing FDA clearance
+
+### Middleton School of Entrepreneurship – Finalist
+
+Later, I expanded the idea into a **30-page business plan** and became a **finalist** in the **UND Middleton School of Entrepreneurship Business Plan Competition**.
+
+In that process, I:
+
+- Conducted **market analysis** (TAM/SAM/SOM, key players, trends in remote patient monitoring and digital biomarkers)
+- Defined a **go-to-market strategy** (clinical partners, pilot projects, early adopters)
+- Built **financial projections**
+- Outlined a **regulatory and validation path**:
+  - Clinical trials
+  - Partnerships with hospitals / clinics
+  - Steps toward FDA clearance and broader deployment
+
+I am not publishing the business plan text here, but it is available upon request in the right context (e.g., for serious collaboration or review).
+
+---
+
+## Poster & Visuals
+
+This work was also part of my poster at the **UND Biomedical Research Symposium (2021)**, where I presented:
+
+- A **literature review** on VR rehab for MS (top half of the poster)  
+- A **section on COVID-19 early prediction using wearable physiological data** (bottom half)  
+
+You can download the poster here:
+
+- **Biomedical Research Poster (2021) – PDF**  
+  `BME Poster 2021_Updated.pdf`
+
+The COVID section of the poster highlights:
+
+- The clinical motivation: early detection and continuous monitoring
+- Key related papers using wearables for COVID detection
+- Initial ideas and structure of the modeling pipeline
+
+---
+
+## Related Work: COVID NLP Extension
+
+Building on this project, I later worked on a **COVID-related NLP pipeline**, where I used a **BERT-based model** to:
+
+- Extract and structure symptom information from **clinical notes**  
+- Support **genomic investigations** and downstream analysis of COVID-related data
+
+That work is separate enough to deserve its own space, but it is closely related in theme (data-driven understanding of COVID) and in how it combines **machine learning with clinical context**.
+
+- **GitHub (COVID symptom NLP):**  
+  <https://github.com/NazimBL/covid_symptom_nlp>
+
+---
+
+## Where I’d like to take this next
+
+Although this specific project grew out of the first wave of COVID-19, the ideas behind it are still very relevant:
+
+- Using wearables for **digital biomarkers**  
+- Developing **early warning systems** for infectious disease  
+- Bridging **technical modeling**, **clinical validation**, and **productization**
+
+If you work on:
+
+- Digital health / remote monitoring  
+- Illness prediction from biosignals  
+- Digital biomarkers and anomaly detection  
+- Or you are building products in this space
+
+and you think our interests align, feel free to reach out — my contact info is at the bottom of this page.

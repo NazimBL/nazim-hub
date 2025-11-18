@@ -1,0 +1,179 @@
+---
+title: "Immersive VR Rehabilitation for Multiple Sclerosis"
+subtitle: "Enhanced bimanual rehab concept and research plan"
+description: >
+  Concept and research plan for using immersive virtual reality and haptics
+  to support bimanual rehabilitation in people living with multiple sclerosis.
+page-layout: full
+toc: false
+---
+
+## Overview
+
+This project started as a biomedical research class project in 2021, but it has always been more than “just” a class assignment for me.
+
+The core idea is simple: **use immersive virtual reality, bimanual tasks, and haptic/EMG feedback to support rehabilitation for people living with Multiple Sclerosis (MS)**. The goal is to create a flexible system that can help track progress over time and potentially improve both motor and mental health outcomes.
+
+I developed:
+
+- A **research proposal and plan** for an MS VR rehab study  
+- A **poster** that I presented at the UND Biomedical Research Conference (2021)  
+- A set of **slides** exploring MS pathophysiology, VR rehab literature, and concrete system design ideas  
+
+Because recruiting people with MS and running proper trials is not easy, I haven’t been able to move this project into a full clinical study yet. I’m keeping it here as a detailed case study and an **open invitation for collaboration**.
+
+---
+
+## Why this project matters to me
+
+Beyond the academic side, this topic is personal. I have someone very close to me who lives with MS, and I’ve seen how the disease affects daily activities, motivation, and long-term planning.
+
+That’s a big part of why I care about:
+
+- Rehabilitation that goes beyond “one-size-fits-all” exercises  
+- Tools that can **track progress, adapt to the person, and keep them engaged**  
+- Making use of VR not just as a gadget, but as a way to safely simulate real-world tasks and support both physical and mental health
+
+---
+
+## Concept in a nutshell
+
+The project is called:
+
+> **Enhanced Bimanual Rehabilitation for Multiple Sclerosis using Immersive Virtual Reality**
+
+The concept combines:
+
+- A **VR headset** (immersive environment)  
+- **Bimanual tasks** (using both hands to perform coordinated actions)  
+- **Sensors and haptics**, such as EMG and hand-tracking, to collect useful data and provide feedback  
+
+The system is built around two VR environments:
+
+1. **Tutorial / assessment environment**  
+   - Gentle, guided tasks  
+   - Focused on learning the interface, assessing reflexes and basic responses  
+   - Integrates sensors and haptics for feedback
+
+2. **Realistic scenario (e.g., grocery store simulation)**  
+   - Everyday bimanual tasks like reaching, grasping, moving items  
+   - Designed to be more engaging and closer to daily life  
+   - Data from these tasks can be used to monitor changes in performance over time
+
+The idea is to **quantify the impact of VR rehab** on:
+
+- Bimanual function  
+- Activity limitation and participation restriction  
+- Quality of life and possibly MS remission indicators  
+
+and compare that to traditional physical therapy approaches.
+
+---
+
+## Research plan (high level)
+
+Even though I haven’t run the full study, I did lay out a research plan that could be picked up by the right team or setting.
+
+### Goals
+
+- Determine short- and long-term impact of immersive VR rehab on:
+  - Gait and balance  
+  - Global motor function  
+  - Activity limitation and participation  
+  - Cognitive function and mental health  
+- Evaluate whether the VR-based approach offers **any added benefit over standard physical therapy**  
+- Keep the system **low-cost and flexible**, so it could be used outside of a single institution
+
+### Methodology – concept stage
+
+In a first phase, the plan focuses on:
+
+- **Bimanual tasks** performed in VR, using basic headsets and additional hardware  
+- Collecting **diagnostic data** such as EMG, hand motion, task completion times, and error patterns  
+- Starting with a **proof-of-concept** to refine:
+  - Task design  
+  - Hardware setup  
+  - Data collection pipeline  
+  - User comfort and safety
+
+Once the proof-of-concept is stable, the idea is to move toward a pilot study with people living with MS, with proper inclusion criteria, outcome measures, and statistical planning.
+
+Because this involves vulnerable participants and clinical settings, it needs the right environment: IRB support, clinicians, therapists, and access to an MS population. That’s the part I’m currently missing.
+
+---
+
+## What I’ve already done
+
+So far, I’ve:
+
+- Written a **research proposal** and **research plan** outlining:
+  - Background and literature review on MS and VR rehab  
+  - Clear objectives, methodology, and expected outcomes  
+  - How to compare VR rehab to traditional therapy  
+- Created and presented a **poster** at the UND Biomedical Research Conference (2021)  
+- Built a **slide deck** that walks through:
+  - MS basics (etiology, symptoms, costs, quality of life)  
+  - Existing VR rehab work and the current research gap  
+  - The system concept and research objectives  
+
+These materials are ready and can be adapted into a grant proposal, pilot protocol, or collaborative project with the right team.
+
+---
+
+## My prior VR experience
+
+This project is not my first step into VR. Earlier, I co-authored:
+
+> **Low-cost VR Collaborative System equipped with Haptic Feedback** (ACM VRST)
+
+In that work, we built a system where:
+
+- Multiple users join a shared VR environment as avatars  
+- A **Kinect sensor** tracks body and gesture information  
+- A **haptic feedback system** (microcontroller + vibrotactile motors + Wi-Fi) triggers physical sensations when avatars interact in VR  
+
+When one avatar “touches” another, the system maps that interaction to the real body and vibrates the corresponding motor, so the user actually feels the contact.   
+
+That experience gave me hands-on practice with:
+
+- VR engine integration (Unity)  
+- Real-time networking and multi-user interaction  
+- Designing and implementing **haptic feedback hardware**  
+- Bridging virtual events and physical sensations
+
+The MS rehab project builds directly on that foundation, but shifts the focus towards **clinical and rehabilitation use cases**.
+
+---
+
+## Resources
+
+You can explore some of the materials related to this project:
+
+- **UND Biomedical Research Conference Poster (2021)** – PDF  
+  - `BME_Poster_2021.pdf` in this folder  
+- **VRST’18 paper – Low-cost VR Collaborative System equipped with Haptic Feedback**  
+  - `vr_paper.pdf` in this folder  
+  - Official ACM page: <https://dl.acm.org/doi/10.1145/3281505.3281615>
+
+If you’re interested in more details (proposal, research plan, or slide deck), feel free to reach out — I’m happy to share them in the right context.
+
+---
+
+## Looking for collaborators
+
+Right now, this project is **concept + research plan + preliminary artifacts**, not a completed clinical trial. That’s intentional: I decided not to rush a half-baked study without proper support.
+
+I’m particularly interested in connecting with:
+
+- Clinicians and physical therapists working with **MS patients**  
+- Labs focusing on **neurorehabilitation, VR rehab, or tele-rehabilitation**  
+- Researchers looking for **VR/AI/biomedical crossover projects**
+
+If you:
+
+- Have access to an MS patient population or rehab infrastructure, **or**  
+- Are interested in co-developing a pilot study or grant around VR rehab
+
+then I’d genuinely be happy to talk and see if we can move this project forward together.
+
+You can find my contact info at the bottom of this page.

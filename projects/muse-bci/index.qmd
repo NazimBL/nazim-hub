@@ -1,64 +1,70 @@
 ---
-title: "HydroTrack: Spectroscopic Analysis Prototype for Real-Time Hydration Monitoring"
-image: quant_chart_ta.jpg
+title: "Brain-Controlled Robot for Assisting Basic Upper Limb Tasks"
+subtitle: "IEEE BSN 2023 Demo – EEG-Based Brain–Computer Interface"
+image: ../../img/bci-robot.jpg
 ---
 
-## Overview
-
-HydroTrack is a smartwatch prototype integrating a **low-cost tri-spectral sensor** for *real-time, non-invasive hydration monitoring*.  
-Built during my M.S. research at **UMass Lowell**, it combines spectroscopy and edge-deployed AI models to infer hydration status from wrist reflectance data.  
-
-- **AI on the edge** – Random Forest and XGBoost classifiers trained on spectroscopic signals, achieving up to 95 % accuracy.  
-- **Hardware** – SparkFun AS7265x Triad spectroscopy sensor embedded in a DSTIKE Watch V4 (ESP32).  
-- **Experiments** – Calibration with lab-grade spectrometer (Hach DR3900), electrolyte-solution benchmarking, skin-hydration tests during fasting & exercise.  
-- **Deployment** – TinyML model runs fully on-device; LEDs indicate hydration state (green = hydrated, red = dehydrated).  
-
-![Prototype setup](quant_chart_ta.jpg)
+This project explores **EEG-based control of a robotic arm** to assist individuals with upper-limb motor impairments.  
+By translating brain activity into robotic commands, the system enables users to perform essential actions—such as **grasping, releasing, or resting**—through thought-triggered muscle movements (e.g., blinking or jaw clenching).
 
 ---
 
-## Publications
-
-- **Belabbaci N.A.**, Alam M.A.U., *HydroTrack: Spectroscopic Analysis Prototype Enabling Real-Time Hydration Monitoring in Wearables*, IEEE EMBC 2024.  
-  → [Read on IEEE Xplore](https://ieeexplore.ieee.org/document/10782531)
-
-- **Belabbaci N.A.**, *Wearable Hydration Monitoring Technologies: A Comprehensive Review of 100+ Studies*, *JMIR mHealth and uHealth* 2025 ; 13 :e60569.  
-  → [Read on JMIR](https://mhealth.jmir.org/2025/1/e60569)
-
-- **Master’s Thesis** – *A Prototype Smartwatch Utilizing Spectroscopy for Real-Time Monitoring of Hydration Status*, UMass Lowell 2024.  
-  → [Download PDF](files/Nazim_HydroTrack_Thesis.pdf)
+### 🧠 Overview
+- **Conference Demo:** IEEE Body Sensor Networks (BSN) 2023  
+- **Collaborators:** Dr. Mohammad Arif Ul Alam (UMass Lowell), Dr. João Luís G. Rosa (University of São Paulo)  
+- **Hardware:** Muse 2 EEG headband, Raspberry Pi-based robotic arm  
+- **Objective:** Restore limited upper-limb motion control via low-cost, portable EEG interface  
 
 ---
 
-## Methods Summary
+### ⚙️ System Design
+The system converts raw EEG signals (alpha, beta, gamma, delta, theta) into control commands using a threshold-based event detector.  
+The robot responds in real time to:
+- **Blink events → Grasp**
+- **Jaw clench events → Release**
+- **Neutral state → No motion**
 
-### Hardware Integration
-The **AS7265x Triad sensor** captures 18 wavelengths (410 – 940 nm).  
-Signals are read via I²C on an ESP32 microcontroller and processed on the watch itself.
+A Raspberry Pi processes classified EEG inputs and drives the robotic arm’s motors through serial communication.  
 
-### Machine-Learning Pipeline
-- **Preprocessing:** noise filtering + Eulerian Video Magnification to amplify subtle optical variations.  
-- **Models:** Random Forest (84 %) and XGBoost (95 %) for 3 hydration classes – *hydrated*, *mid*, *dehydrated*.  
-- **Deployment:** converted to TinyML header files and executed locally on the watch.
-
-### Experiments
-1. **Electrolyte calibration** – sodium/potassium solutions vs lab spectrometer.  
-2. **Skin hydration** – pre/mid/post workout & fasting sessions with 5 participants.  
-3. **Additional study** – spectroscopy-based *emotion recognition* (83 % accuracy happy vs sad).
+![](bci-setup.png){fig-align="center" width="80%"}
 
 ---
 
-## Future Directions
+### 📊 Experimental Evaluation
+Nine participants (ages 25–31) tested the prototype. A **6-question Likert survey** evaluated:
+- Ease of use  
+- Responsiveness  
+- Comfort  
+- Accuracy  
 
-- **Clinical validation** against MX3 Hydration Testing System  
-- **Expanded datasets** & defined optical biomarkers  
-- **Motion artifact filtering** via gyroscope fusion  
-- **Emotion analytics** extension to multi-class affective states  
+Results indicated **strong user satisfaction** and enthusiasm for extending the system to rehabilitation and assistive robotics.
+
 
 ---
 
-## Citation
-> Nazim A. Belabbaci, *HydroTrack: Spectroscopic Analysis Prototype Enabling Real-Time Hydration Monitoring in Wearables*, IEEE EMBC 2024.  
+### 🧩 Resources
+- **Code Repository:** [GitHub – NazimBL/EEG-Controlled-Robot](https://github.com/NazimBL/EEG-Controlled-Robot)
+- **Demo Video:** [Watch Demo](bci-demo-video.mp4)
+- **Publication:** [ResearchGate Article](https://www.researchgate.net/publication/397546710_Brain-Controlled_Robot_for_Assisting_Basic_Upper_Limb_Tasks)
+
+---
+
+### 💡 Impact & Future Work
+This proof-of-concept demonstrates that **affordable EEG sensors** can power **real-time assistive robotics**.  
+Next steps include:
+- Expanding to **multi-channel EEG classification** for more complex gestures  
+- Incorporating **machine learning** for adaptive signal mapping  
+- Testing in **rehabilitation contexts** for neurodegenerative conditions
+
+---
+
+### 🧑‍🔬 Role
+I designed and implemented the full pipeline:
+- EEG signal acquisition and preprocessing  
+- Feature extraction and event classification  
+- Raspberry Pi control logic  
+- Robotic arm motion programming  
+- Poster design and BSN 2023 demo presentation  
 
 ---
 
