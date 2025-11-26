@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Towards wearable, non-invasive and real-time hydration tracking",
+    "section": "",
+    "text": "HydroTrack is the first prototype I made by integrating a low-cost optical sensor into an open-source programmable watch and turning it into a hydration monitor. Built during my M.S. research at UMass Lowell, it combines spectroscopy and edge-deployed AI models to infer hydration status from wrist reflectance data.\n\nAI on the edge – Random Forest and XGBoost classifiers trained on spectroscopic signals, achieving up to 90% accuracy.\n\nHardware – SparkFun AS7265x Triad spectroscopy sensor embedded in a DSTIKE Watch V4 (ESP32).\n\nExperiments – Calibration with lab-grade spectrometer (Hach DR3900), electrolyte-solution benchmarking, skin-hydration tests during fasting & exercise.\n\nDeployment – TinyML model runs fully on-device; LEDs indicate hydration state (green = hydrated, red = dehydrated).\n\n\n\n\nPrototype setup"
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "HydroTrack: Spectroscopic Analysis Prototype for Real-Time Hydration Monitoring",
+    "section": "",
+    "text": "HydroTrack is a smartwatch prototype integrating a low-cost tri-spectral sensor for real-time, non-invasive hydration monitoring.\nBuilt during my M.S. research at UMass Lowell, it combines spectroscopy and edge-deployed AI models to infer hydration status from wrist reflectance data.\n\nAI on the edge – Random Forest and XGBoost classifiers trained on spectroscopic signals, achieving up to 95 % accuracy.\n\nHardware – SparkFun AS7265x Triad spectroscopy sensor embedded in a DSTIKE Watch V4 (ESP32).\n\nExperiments – Calibration with lab-grade spectrometer (Hach DR3900), electrolyte-solution benchmarking, skin-hydration tests during fasting & exercise.\n\nDeployment – TinyML model runs fully on-device; LEDs indicate hydration state (green = hydrated, red = dehydrated).\n\n\n\n\nPrototype setup"
+  },
+  {
+    "objectID": "index.html#publications",
+    "href": "index.html#publications",
+    "title": "Towards wearable, non-invasive and real-time hydration tracking",
+    "section": "Publications",
+    "text": "Publications\n\nBelabbaci N.A., Alam M.A.U., HydroTrack: Spectroscopic Analysis Prototype Enabling Real-Time Hydration Monitoring in Wearables, IEEE EMBC 2024.\n→ Read on IEEE Xplore\nBelabbaci N.A., Wearable Hydration Monitoring Technologies: A Comprehensive Review of 100+ Studies, JMIR mHealth and uHealth 2025; 13:e60569.\n→ Read on JMIR\nMaster’s Thesis – A Prototype Smartwatch Utilizing Spectroscopy for Real-Time Monitoring of Hydration Status, UMass Lowell 2024.\n→ Download PDF"
+  },
+  {
+    "objectID": "index.html#methods-summary",
+    "href": "index.html#methods-summary",
+    "title": "HydroTrack: Spectroscopic Analysis Prototype for Real-Time Hydration Monitoring",
+    "section": "Methods Summary",
+    "text": "Methods Summary\n\nHardware Integration\nThe AS7265x Triad sensor captures 18 wavelengths (410 – 940 nm).\nSignals are read via I²C on an ESP32 microcontroller and processed on the watch itself.\n\n\nMachine-Learning Pipeline\n\nPreprocessing: noise filtering + Eulerian Video Magnification to amplify subtle optical variations.\n\nModels: Random Forest (84 %) and XGBoost (95 %) for 3 hydration classes – hydrated, mid, dehydrated.\n\nDeployment: converted to TinyML header files and executed locally on the watch.\n\n\n\nExperiments\n\nElectrolyte calibration – sodium/potassium solutions vs lab spectrometer.\n\nSkin hydration – pre/mid/post workout & fasting sessions with 5 participants.\n\nAdditional study – spectroscopy-based emotion recognition (83 % accuracy happy vs sad)."
+  },
+  {
+    "objectID": "index.html#future-directions",
+    "href": "index.html#future-directions",
+    "title": "HydroTrack: Spectroscopic Analysis Prototype for Real-Time Hydration Monitoring",
+    "section": "Future Directions",
+    "text": "Future Directions\n\nClinical validation against MX3 Hydration Testing System\n\nExpanded datasets & defined optical biomarkers\n\nMotion artifact filtering via gyroscope fusion\n\nEmotion analytics extension to multi-class affective states"
+  },
+  {
+    "objectID": "index.html#citation",
+    "href": "index.html#citation",
+    "title": "Towards wearable, non-invasive and real-time hydration tracking",
+    "section": "Citation",
+    "text": "Citation\n\nNazim A. Belabbaci, HydroTrack: Spectroscopic Analysis Prototype Enabling Real-Time Hydration Monitoring in Wearables, IEEE EMBC 2024."
+  },
+  {
+    "objectID": "index.html#overview-of-the-1st-prototype",
+    "href": "index.html#overview-of-the-1st-prototype",
+    "title": "Towards wearable, non-invasive and real-time hydration tracking",
+    "section": "",
+    "text": "HydroTrack is the first prototype I made by integrating a low-cost optical sensor into an open-source programmable watch and turning it into a hydration monitor. Built during my M.S. research at UMass Lowell, it combines spectroscopy and edge-deployed AI models to infer hydration status from wrist reflectance data.\n\nAI on the edge – Random Forest and XGBoost classifiers trained on spectroscopic signals, achieving up to 90% accuracy.\n\nHardware – SparkFun AS7265x Triad spectroscopy sensor embedded in a DSTIKE Watch V4 (ESP32).\n\nExperiments – Calibration with lab-grade spectrometer (Hach DR3900), electrolyte-solution benchmarking, skin-hydration tests during fasting & exercise.\n\nDeployment – TinyML model runs fully on-device; LEDs indicate hydration state (green = hydrated, red = dehydrated).\n\n\n\n\nPrototype setup"
+  }
+]

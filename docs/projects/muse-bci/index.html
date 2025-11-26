@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.8.26">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -37,7 +37,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../../site_libs/bootstrap/bootstrap-eddb3962ab3645cc72203ba2d14d9642.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
@@ -102,8 +102,6 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">nazim-hub.com</span>
     </a>
@@ -165,9 +163,8 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>This project explores <strong>EEG-based control of a robotic arm</strong> to assist individuals with upper-limb motor impairments.<br>
-By translating brain activity into robotic commands, the system enables users to perform essential actions—such as <strong>grasping, releasing, or resting</strong>—through thought-triggered muscle movements (e.g., blinking or jaw clenching).</p>
-<hr>
+<p>This was my first real introduction to BCI and EEG work. The idea was simple: can we use a small hobby-grade portable EEG sensor to control a robotic arm?</p>
+<p>The project explores whether basic EEG signals can trigger simple robotic actions—like grasping, releasing, or resting—using thought-linked gestures, blinking or jaw clenching. It was an early experiment, but it showed that even low-cost EEG hardware can drive meaningful control of assistive devices.</p>
 <section id="overview" class="level3">
 <h3 class="anchored" data-anchor-id="overview">🧠 Overview</h3>
 <ul>
@@ -177,15 +174,13 @@ By translating brain activity into robotic commands, the system enables users to
 </li>
 <li><strong>Hardware:</strong> Muse 2 EEG headband, Raspberry Pi-based robotic arm<br>
 </li>
-<li><strong>Objective:</strong> Restore limited upper-limb motion control via low-cost, portable EEG interface</li>
+<li><strong>Objective:</strong> Upper-limb motion control via low-cost, portable EEG interface</li>
 </ul>
 <hr>
 </section>
 <section id="system-design" class="level3">
-<h3 class="anchored" data-anchor-id="system-design">⚙️ System Design</h3>
-<p>The system converts raw EEG signals (alpha, beta, gamma, delta, theta) into control commands using a threshold-based event detector.<br>
-The robot responds in real time to: - <strong>Blink events → Grasp</strong> - <strong>Jaw clench events → Release</strong> - <strong>Neutral state → No motion</strong></p>
-<p>A Raspberry Pi processes classified EEG inputs and drives the robotic arm’s motors through serial communication.</p>
+<h3 class="anchored" data-anchor-id="system-design">System Design</h3>
+<p>The system converts raw EEG signals (alpha, beta, gamma, delta, theta) into control commands using a threshold-based event detector. A Raspberry Pi processes classified EEG inputs and drives the robotic arm’s motors through serial communication.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="bci-setup.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:80.0%"></p>
@@ -193,40 +188,47 @@ The robot responds in real time to: - <strong>Blink events → Grasp</strong> - 
 </div>
 <hr>
 </section>
-<section id="experimental-evaluation" class="level3">
-<h3 class="anchored" data-anchor-id="experimental-evaluation">📊 Experimental Evaluation</h3>
-<p>Nine participants (ages 25–31) tested the prototype. A <strong>6-question Likert survey</strong> evaluated: - Ease of use<br>
-- Responsiveness<br>
-- Comfort<br>
-- Accuracy</p>
-<p>Results indicated <strong>strong user satisfaction</strong> and enthusiasm for extending the system to rehabilitation and assistive robotics.</p>
-<hr>
-</section>
-<section id="resources" class="level3">
-<h3 class="anchored" data-anchor-id="resources">🧩 Resources</h3>
+<section id="what-i-learned-why-it-was-hard" class="level3">
+<h3 class="anchored" data-anchor-id="what-i-learned-why-it-was-hard">What I Learned &amp; Why It Was Hard</h3>
+<p>Training a model to “detect thoughts” with a hobby EEG device is extremely difficult.</p>
+<p>Because the Muse 2 only has <strong>four electrodes</strong>, all placed on the <strong>frontal lobe</strong>, the signals mainly reflect:</p>
 <ul>
-<li><strong>Code Repository:</strong> <a href="https://github.com/NazimBL/EEG-Controlled-Robot">GitHub – NazimBL/EEG-Controlled-Robot</a></li>
-<li><strong>Demo Video:</strong> <a href="bci-demo-video.mp4">Watch Demo</a></li>
-<li><strong>Publication:</strong> <a href="https://www.researchgate.net/publication/397546710_Brain-Controlled_Robot_for_Assisting_Basic_Upper_Limb_Tasks">ResearchGate Article</a></li>
+<li>Focus<br>
+</li>
+<li>Attention<br>
+</li>
+<li>Facial muscle movement</li>
 </ul>
+<p>But <strong>intentional movement</strong> comes from the <strong>motor cortex</strong>, that are located at the top of the head…<br>
+far away from where the Muse collects data. This meant true “thought-based motion classification” wasn’t realistic with this device, and the model I made was really just overfitting to my brain patterns, as well as the limited scope of classifying only two distinct motions. On the other hand, Blinking and Jaw clench events were very easy to implement.</p>
 <hr>
 </section>
 <section id="impact-future-work" class="level3">
-<h3 class="anchored" data-anchor-id="impact-future-work">💡 Impact &amp; Future Work</h3>
-<p>This proof-of-concept demonstrates that <strong>affordable EEG sensors</strong> can power <strong>real-time assistive robotics</strong>.<br>
-Next steps include: - Expanding to <strong>multi-channel EEG classification</strong> for more complex gestures<br>
-- Incorporating <strong>machine learning</strong> for adaptive signal mapping<br>
-- Testing in <strong>rehabilitation contexts</strong> for neurodegenerative conditions</p>
+<h3 class="anchored" data-anchor-id="impact-future-work">Impact &amp; Future Work</h3>
+<p>This proof-of-concept still shows that <strong>affordable EEG sensors</strong> can power <strong>real-time assistive robotics</strong>, even with limited channels.</p>
+<p>But now that I better understand the relationship between brain regions and movement intention, the next step is clear:</p>
+<ul>
+<li>Move from 4 frontal electrodes → to <strong>multi-channel EEG covering the motor cortex</strong><br>
+</li>
+<li>Try a portable headset like the <strong>Emotiv Epoc X</strong>, which actually places electrodes over the movement areas<br>
+</li>
+<li>Re-run the study with better spatial coverage<br>
+</li>
+<li>Eventually test it in <strong>rehabilitation or assistive-tech contexts</strong></li>
+</ul>
+<p>At the end, I did discover a really interesting use-case for the Muse. Because of the frontal lobe signals give us access, it’s actually much better suited for studying focus and mental engagement—the whole idea of being in a flow state, or what athletes call “in the zone”. I even ran a small focus study around this concept, which you can check out <a href="https://www.linkedin.com/feed/update/urn:li:activity:7053571331304382464/">here</a></p>
 <hr>
 </section>
-<section id="role" class="level3">
-<h3 class="anchored" data-anchor-id="role">🧑‍🔬 Role</h3>
-<p>I designed and implemented the full pipeline: - EEG signal acquisition and preprocessing<br>
-- Feature extraction and event classification<br>
-- Raspberry Pi control logic<br>
-- Robotic arm motion programming<br>
-- Poster design and BSN 2023 demo presentation</p>
-<hr>
+<section id="resources" class="level3">
+<h3 class="anchored" data-anchor-id="resources">Resources</h3>
+<ul>
+<li><strong>Code Repository:</strong> <a href="https://github.com/NazimBL/EEG-Controlled-Robot">GitHub – NazimBL/EEG-Controlled-Robot</a></li>
+<li><strong>Publication:</strong> <a href="https://www.researchgate.net/publication/397546710_Brain-Controlled_Robot_for_Assisting_Basic_Upper_Limb_Tasks">ResearchGate Article</a></li>
+</ul>
+<video controls="" width="70%">
+<source src="bci-demo-video.mp4" type="video/mp4">
+</video>
+<p><strong>Demo Video – EEG-Controlled Robotic Arm (BSN 2023)</strong></p>
 
 
 </section>

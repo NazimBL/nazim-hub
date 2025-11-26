@@ -4,7 +4,7 @@ project:
   execute-dir: project
 
 website:
-  title: "HydroTrack: Real-Time Hydration Monitoring"
+  title: "Towards wearable, non-invasive and real-time hydration tracking"
   navbar:
     left:
       - href: index.qmd

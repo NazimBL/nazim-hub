@@ -1,24 +1,14 @@
 ---
 title: "Immersive VR Rehabilitation for Multiple Sclerosis"
-subtitle: "Enhanced bimanual rehab concept and research plan"
-description: >
-  Concept and research plan for using immersive virtual reality and haptics
-  to support bimanual rehabilitation in people living with multiple sclerosis.
+
 page-layout: full
 toc: false
 ---
 
 ## Overview
 
-This project started as a biomedical research class project in 2021, but it has always been more than “just” a class assignment for me.
+This project started as a biomedical research class project in 2021. The idea is to use immersive virtual reality, bimanual tasks, and haptic/EMG feedback to support rehabilitation for people living with Multiple Sclerosis (MS). The goal is to create a flexible system that can help track progress over time and potentially improve both motor and mental health outcomes.
 
-The core idea is simple: **use immersive virtual reality, bimanual tasks, and haptic/EMG feedback to support rehabilitation for people living with Multiple Sclerosis (MS)**. The goal is to create a flexible system that can help track progress over time and potentially improve both motor and mental health outcomes.
-
-I developed:
-
-- A **research proposal and plan** for an MS VR rehab study  
-- A **poster** that I presented at the UND Biomedical Research Conference (2021)  
-- A set of **slides** exploring MS pathophysiology, VR rehab literature, and concrete system design ideas  
 
 Because recruiting people with MS and running proper trials is not easy, I haven’t been able to move this project into a full clinical study yet. I’m keeping it here as a detailed case study and an **open invitation for collaboration**.
 
@@ -36,11 +26,9 @@ That’s a big part of why I care about:
 
 ---
 
-## Concept in a nutshell
+## Research Proposal
 
-The project is called:
-
-> **Enhanced Bimanual Rehabilitation for Multiple Sclerosis using Immersive Virtual Reality**
+The project title: **Enhanced Bimanual Rehabilitation for Multiple Sclerosis using Immersive Virtual Reality**
 
 The concept combines:
 
@@ -149,10 +137,10 @@ The MS rehab project builds directly on that foundation, but shifts the focus to
 
 You can explore some of the materials related to this project:
 
-- **UND Biomedical Research Conference Poster (2021)** – PDF  
-  - `BME_Poster_2021.pdf` in this folder  
+- [**UND Biomedical Research Conference Poster (2021)**](https://www.researchgate.net/publication/361322939_Harvesting_Healthcare_40_Using_Virtual_Reality_for_Enhanced_Rehabilitation_and_AI_for_Pandemic_Prediction_The_MSNEP_Group_MetaSimulation_of_NonEquilibrium_Processes_References) 
+    
 - **VRST’18 paper – Low-cost VR Collaborative System equipped with Haptic Feedback**  
-  - `vr_paper.pdf` in this folder  
+  - → [Download PDF](files/vr_paper.pdf)  
   - Official ACM page: <https://dl.acm.org/doi/10.1145/3281505.3281615>
 
 If you’re interested in more details (proposal, research plan, or slide deck), feel free to reach out — I’m happy to share them in the right context.
