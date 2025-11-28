@@ -7,28 +7,15 @@ toc: false
 
 ## Overview
 
-This project started as a biomedical research class project in 2021. The idea is to use immersive virtual reality, bimanual tasks, and haptic/EMG feedback to support rehabilitation for people living with Multiple Sclerosis (MS). The goal is to create a flexible system that can help track progress over time and potentially improve both motor and mental health outcomes.
+The idea is to use immersive virtual reality, bimanual tasks, and haptic/EMG feedback to support rehabilitation for people living with Multiple Sclerosis (MS). The goal is to create a flexible system that can help track progress over time and potentially improve both motor and mental health outcomes.
 
 
 Because recruiting people with MS and running proper trials is not easy, I haven’t been able to move this project into a full clinical study yet. I’m keeping it here as a detailed case study and an **open invitation for collaboration**.
 
 ---
 
-## Why this project matters to me
 
-Beyond the academic side, this topic is personal. I have someone very close to me who lives with MS, and I’ve seen how the disease affects daily activities, motivation, and long-term planning.
-
-That’s a big part of why I care about:
-
-- Rehabilitation that goes beyond “one-size-fits-all” exercises  
-- Tools that can **track progress, adapt to the person, and keep them engaged**  
-- Making use of VR not just as a gadget, but as a way to safely simulate real-world tasks and support both physical and mental health
-
----
-
-## Research Proposal
-
-The project title: **Enhanced Bimanual Rehabilitation for Multiple Sclerosis using Immersive Virtual Reality**
+## Enhanced Bimanual Rehabilitation for Multiple Sclerosis using Immersive VR
 
 The concept combines:
 
@@ -110,7 +97,7 @@ These materials are ready and can be adapted into a grant proposal, pilot protoc
 
 ## My prior VR experience
 
-This project is not my first step into VR. Earlier, I co-authored:
+This project is not my first step into VR. Earlier in my career, I collaborated with **Dr Ahmed Bentaleb** and I co-authored:
 
 > **Low-cost VR Collaborative System equipped with Haptic Feedback** (ACM VRST)
 
@@ -165,3 +152,16 @@ If you:
 then I’d genuinely be happy to talk and see if we can move this project forward together.
 
 You can find my contact info at the bottom of this page.
+
+---
+
+## Why this project matters to me
+
+Beyond the academic and business side, this topic is personal. I have someone very close to me who lives with MS, and I’ve seen how the disease affects daily activities, motivation, and long-term planning.
+
+That’s a big part of why I care about:
+
+- Rehabilitation that goes beyond “one-size-fits-all” exercises  
+- Tools that can **track progress, adapt to the person, and keep them engaged**  
+- Making use of VR not just as a gadget, but as a way to safely simulate real-world tasks and support both physical and mental health
+

@@ -14,7 +14,7 @@ project:
 
 website:
   title: "nazim-hub.com"
-  description: "I are a Research Engineer/Scientist with a solid background in electronics and software/hardware integration. My work focuses on applying AI and biosensing to develop scalable wearable health monitoring systems. I am always exploring innovative ways to translate technological advances into meaningful healthcare impact."
+  description: "I am a Research Engineer/Scientist with a solid background in electronics and software/hardware integration. My work focuses on applying AI and biosensing to develop reliable (and cool) wearable health monitoring systems. I am always exploring innovative ways to translate technological advances into meaningful healthcare impact."
   site-url: "https://nazimbl.github.io/nazim-hub"
   repo-url: "https://github.com/NazimBL/nazim-hub"
 
@@ -71,3 +71,4 @@ resources:
     - "splitkbcompare.html"
     - "static/"
     - cv/
+    - "projects/**/*.mp4"

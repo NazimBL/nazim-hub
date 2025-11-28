@@ -13,7 +13,7 @@ execute:
 source("_common.R")
 ```
 
-Welcome! I am a researcher, engineer, scientist, (aspiring) entrepreneur and soon to be PhD. See my [cv](cv/nazim_hub_resume_202511.pdf) for more details
+Welcome! I am a researcher, engineer, scientist and soon to be PhD. See my [cv](cv/nazim_hub_resume_202511.pdf) for more details
 
 # Short Bio
 
@@ -28,26 +28,29 @@ My research focuses on understanding biomedical phenomena and identifying key bi
 I have expertise in electronics design, embedded systems, data science, machine learning, and generative AI (diffusion models). I develop computational and edge-AI solutions for health monitoring and diagnosis.
 You can see more about my research on my [Research Page](research.qmd).
 
-# Entrepreneurship & Business Ventures
+# Entrepreneurship & Innovation
+
+I’ve participated in several entrepreneurial and product-driven engineering efforts. In 2019 I co-founded Deadline Technologies, where I produced [development boards](https://www.linkedin.com/feed/update/urn:li:activity:6821393409236844544/) for academic and industrial use. This experience involved full product lifecycle: PCB design, firmware, marketing, and direct sales.
+I also co-founded [Deadline Store](https://www.facebook.com/thedeadlinestore/), an electronics retail and community initiative that helped make maker tools and components more accessible to students and builders in Algeria.
+
+Today, I serve as a technical advisor to [BnBe Technologies](https://bnbetechnologies.com/), an Algerian IoT and embedded-systems engineering company focused on product development and applied electronics.
+
+# Quantitative Trading & Market Analysis
+
+OWhen I need a break from my primary research, I like to stretch my mind in a different direction by analyzing financial markets. What began as a casual interest in technical analysis grew into a deeper study of market structure and time-series modeling. I enjoy analyzing price action, implied volatility , and how traders’ expectations about future price movement are built into option prices.
+
+As part of this interest, I experimented with small algorithms for swing-trading signals and multi-indicator strategies, and I have built tools such as an [automated generator for TradingView](https://github.com/NazimBL/VolatilityHorizons) that visualize expected moves from option chain data.  
+
+Although this remains a personal hobby, it aligns well with the analytical mindset I bring to my research : identifying patterns, testing hypotheses, building models, and evaluating their performance over time.
 
 <center>
-![Hex stickers for R packages and courses I've developed](images/hex/hex_logos.png){width=80% .external}
+![](images/quant_chart_ta.jpg){width=70% .external}
 </center>
 
-I use and contribute to [{{< fa brands r-project >}}](https://www.r-project.org/about.html) in most of my research and teaching. One specific category of research is choice modeling. I use [choice-based conjoint](https://sawtoothsoftware.com/help/lighthouse-studio/manual/hid_web_whatcbc.html) surveys to measure people's preferences for a variety of technologies and policies. I have developed several packages for implementing conjoint in {{< fa brands r-project >}}, including [`{logitr}`](https://jhelvy.github.io/logitr/) for estimating multinomial and mixed logit models with preference space and "willingness-to-pay" space utility parameterizations, and [`{cbcTools}`](https://jhelvy.github.io/cbcTools/) for  designing and conducting power analyses for choice-based conjoint surveys. I also developed the [`{surveydown}`](https://surveydown.org/) package along with [Pingfan Hu](https://pingfanhu.com/) and Bogdan Bunea for making markdown-based surveys with Quarto shiny documents. I also co-authored the [`{renderthis}`](https://jhelvy.github.io/renderthis/) package with [Garrick Aden-Buie](https://www.garrickadenbuie.com/) for rendering media (e.g., [`xaringan`](https://github.com/yihui/xaringan) slides) into multiple different formats. Finally , I also [teach](teaching.html) multiple programming and data analytics courses in {{< fa brands r-project >}}, and all of my course materials are built using {{< fa brands r-project >}}, including course websites and slides.
-
-You can see more of my {{< fa brands r-project >}} projects and source code on my GitHub page: [https://github.com/jhelvy/](https://github.com/jhelvy/)
-
-# Quant and Stock market
-
-<center>
-![ain't this pretty ?](images/quant_chart_ta.jpg){width=70% .external}
-</center>
-
-I began studying Chinese during my second year as an undergraduate engineering student at Virginia Tech in the fall of 2006. The next spring, I received the Horton Scholarship, which provided a unique opportunity to travel to China and complete an educational project of my own design. I traveled to Dalian in the summer of 2008 to study language and culture at Liaoning Normal University, then I moved to Shanghai in the fall to gain international engineering experience as an intern in General Electric's Advanced Wind Turbine Operations division. The project opened my eyes to the many forces that shape the adoption of emerging technologies, in particular the importance of policy and economics. After returning to the U.S., I was awarded a [Critical Language Scholarship](http://clscholarship.org/) by the U.S. Department of State to study Chinese in Harbin, China during the summer of 2009, and I have since returned to China numerous times for work or research, including an internship at the [Innovation Center for Energy and Transportation (iCET)](http://icet.org.cn/english/index.asp) and as a 2014 [East Asia Pacific Summer Institutes (EAPSI)](http://www.nsf.gov/eapsi) Fellow supported by the U.S. National Science Foundation. Today, I continue to use my language skills and experience in China while conducting interdisciplinary research in China.
 
 
+Outside research, I enjoy going to the gym, watching sports, traveling, writing, and I like to think I'm pretty good at soccer and pool.
 
-if you made it till here, in this age of constant stimulation, thank you !
+If you made this far, thank you ! your attention is much appreciated in an age full of noise.
 
 Nazim.

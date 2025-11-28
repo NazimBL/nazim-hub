@@ -1,10 +1,6 @@
 ---
 title: "MotifXplorer – Genomic Peak Analysis Web Tool"
 
-description: >
-  MotifXplorer is a web-based genomic peak analysis platform that lets
-  researchers upload ChIP-seq peaks, generate negative examples, run
-  XGBoost-based classification, and interpret top sequence signatures and motifs.
 page-layout: full
 toc: false
 ---
@@ -14,7 +10,7 @@ toc: false
 **MotifXplorer** is a **genomic peak analysis web tool** built to help researchers and clinicians  
 analyze ChIP-seq peaks *without* having to write code or understand the details of machine learning.
 
-The idea is simple:
+How it works:
 
 - Upload your **ChIP-seq peak BED file**  
 - Let the platform **generate negatives**, extract sequences, and train an **XGBoost model**  
@@ -24,7 +20,7 @@ The idea is simple:
   - Optional motif analysis and decision tree visualization
 
 MotifXplorer is being developed in collaboration with **Dr. Motoki Takaku’s lab** and **Mounir Ouadi**.  
-The back end and web front end are fully functional; we are currently finalizing **deployment on a public server** so external labs can start using it.
+The back end and web front end are fully functional; we are currently finalizing deployment on a public server so external labs can start using it.
 
 ---
 
@@ -40,15 +36,14 @@ The main goal is to **lower the barrier** to exploring DNA sequence patterns and
 
 ---
 
-## Demo – MotifXplorer in Action
+## Demo – Preview of MotifXplorer
 
 Below is a short demo of MotifXplorer running through a typical analysis workflow:
 
-<div style="max-width: 900px; margin: 0 auto;">
-  <video controls src="MotifXplorer_Report.mp4" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.25);">
+
+  <video controls src="MotifXplorer Report.mp4" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.25);">
     Your browser does not support the video tag.
   </video>
-</div>
 
 ---
 
@@ -93,72 +88,6 @@ After training, MotifXplorer extracts and displays:
 
 This helps highlight **candidate regulatory sequence patterns** without requiring the user to inspect raw model internals.
 
-### Optional Motif Analysis
-
-As an additional layer, MotifXplorer can:
-
-- Run **motif enrichment analysis** on the most important sequences  
-- Map them to **transcription factor motifs**  
-- Provide a more biological interpretation of what the model is picking up
-
----
-
-## How It Works (Under the Hood)
-
-MotifXplorer combines a set of **Python scripts** and a **web front end** into a single, user-friendly platform.
-
-### Sequence Extraction
-
-Core scripts:
-
-- `bedSeqExtractor.py`  
-  - Extracts sequences for both positive and (optionally) negative regions from a reference genome.  
-  - Usage (conceptually):  
-    ```bash
-    python bedSeqExtractor.py positive.bed negative.bed genome.fa output.bed.new
-    ```
-- `DualBedSeqExtractor.py`  
-  - Handles extractions when only a positive BED and reference genome are provided.
-
-The output is a FASTA-like file with sequences corresponding to genomic regions.
-
-### Data Labeling
-
-- `data_labeling.py`  
-  - Takes the extracted sequences and labels them as **positive** or **negative**.  
-  - Produces a labeled CSV ready for machine learning.
-
-### Machine Learning Pipeline
-
-- `xgb_kmer_classifier.py`  
-  - Converts sequences to **k-mer representations**  
-  - Trains an **XGBoost classifier**  
-  - Saves:
-    - The trained model (`xgb_model.json`)  
-    - The vectorizer (`vectorizer.pickle`)
-
-- `evaluate_model.py`  
-  - Evaluates trained models:
-    - Accuracy, precision, recall, F1-score  
-    - ROC curve plot  
-  - Saves metrics and plots to an output directory.
-
-- `feature_importance.py`  
-  - Computes and plots **feature importance** (top k-mers)  
-  - Supports multiple importance metrics:
-    - Weight (how often a feature appears in splits)  
-    - Cover (how many samples are affected)  
-    - Gain (improvement in accuracy when using that feature)  
-    - Total gain and total cover
-
-- `importance_tree.py`  
-  - Visualizes the **XGBoost decision tree**:
-    - Internal nodes show k-mer splits and thresholds  
-    - Leaf nodes show final decisions  
-  - Outputs a tree graphic to help users understand model behavior.
-
-The entire stack is wired together in the web app so users never see these scripts directly—they just click through the UI.
-
 ---
 
 ## Web Workflow
@@ -186,41 +115,6 @@ From a user’s perspective, a typical run looks like this:
 
 ---
 
-## Collaborators & Roles
-
-This project is a collaboration between:
-
-- **Dr. Motoki Takaku**  
-  - Chromatin biology / genomics, ChIP-seq expertise  
-  - Helped shape the biological questions and use cases
-
-- **Mounir Ouadi**  
-  - Web developer  
-  - Worked on the web interface, UX, and integration of the back-end scripts into a clean platform
-
-- **Me – Lead developer & machine learning engineer**  
-  - Designed the overall pipeline from **sequence extraction to ML model interpretation**  
-  - Implemented Python scripts for sequence handling, k-mer encoding, XGBoost training, and feature analysis  
-  - Helped shape the UX so that **non-ML users** can still do powerful analyses  
-  - Coordinating with the lab on deployment and future extensions
-
----
-
-## Current Status & Deployment
-
-- The **core pipeline and web interface are working** and in use in a private environment.  
-- We are currently:
-  - Finalizing **deployment on a public server** (in coordination with Dr. Takaku’s lab)  
-  - Preparing documentation and user guides  
-  - Planning how to handle **larger datasets and multiple concurrent users**
-
-Once the server is up, the goal is to:
-
-- Allow external researchers to use MotifXplorer for their own ChIP-seq data  
-- Iterate on the tool based on real-world feedback from genomics labs
-
----
-
 ## Looking for Collaborators & Early Testers
 
 We are interested in connecting with:
@@ -234,4 +128,4 @@ If you:
 - Have ChIP-seq peak datasets and would like to try MotifXplorer, or  
 - Want to collaborate on extending the platform (e.g., new genomes, new ML models, integration with existing pipelines),
 
-feel free to reach out — my contact information is at the bottom of this page.
+feel free to reach out, my contact information is at the bottom of this page.

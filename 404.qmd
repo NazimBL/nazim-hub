@@ -13,19 +13,19 @@ source("_common.R")
 
 <br>
 <center>
-<img src="images/404-hippo.png" width=350>
+<img src="images/404.png" width=350>
 </center>
 
-# Whoops!
+# Whoops! open ckt
 
-### The requested page does not exist 😔
+### The requested page does not exist !
 
 <br>
 
 ```{r}
 icon_link(
     text = "Return to home",
-    url  = "https://www.jhelvy.com"
+    url  = "https://nazimbl.github.io/nazim-hub"
 )
 ```
 

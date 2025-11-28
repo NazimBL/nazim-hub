@@ -6,14 +6,17 @@ image: hydrotrack.jpg
 ## Overview of the 1st prototype
 
 HydroTrack is the first prototype I made by integrating a low-cost optical sensor into an open-source programmable watch and turning it into a hydration monitor. 
-Built during my M.S. research at **UMass Lowell**, it combines spectroscopy and edge-deployed AI models to infer hydration status from wrist reflectance data.  
+ 
 
-- **AI on the edge** – Random Forest and XGBoost classifiers trained on spectroscopic signals, achieving up to 90% accuracy.  
 - **Hardware** – SparkFun AS7265x Triad spectroscopy sensor embedded in a DSTIKE Watch V4 (ESP32).  
 - **Experiments** – Calibration with lab-grade spectrometer (Hach DR3900), electrolyte-solution benchmarking, skin-hydration tests during fasting & exercise.  
 - **Deployment** – TinyML model runs fully on-device; LEDs indicate hydration state (green = hydrated, red = dehydrated).  
 
-![Prototype setup](hydrotrack.jpeg)
+<div style="display: flex; justify-content: center; gap: 15px; width: 100%;">
+  <img src="hydrotrack.jpeg" style="width: 30%; object-fit: cover;">
+  <img src="Picture1.png" style="width: 30%; object-fit: cover;">
+  <img src="Picture2.jpg" style="width: 30%; object-fit: cover;">
+</div>
 
 ***
 
@@ -29,10 +32,12 @@ Signals are read via I²C on an ESP32 microcontroller and processed on the watch
 - **Deployment:** converted to TinyML header files and executed locally on the watch.
 
 ### Experiments
-1. **Electrolyte calibration** – sodium/potassium solutions vs lab spectrometer.  
-2. **Skin hydration** – pre/mid/post workout & fasting sessions with 5 participants.  
+1. **Electrolyte calibration with reference solutions:** 
+To validate the sensor, we tested several hydration drinks and lab-made sodium and potassium solutions at different concentrations. Their light absorbance was first measured with a professional lab spectrometer and then compared with readings from our wearable optical sensor to assess accuracy 
+2. **Tracking hydration change during workout:**
+We measured changes in skin absorbance before, during, and after workout sessions to observe how dehydration affects the body’s optical response.
 
-### What's next > Expanded Research: Beyond the Prototype
+### Beyond the Prototype
 
 After developing the first HydroTrack prototype, I conducted an extensive review of [hydration-monitoring technologies](https://mhealth.jmir.org/2025/1/e60569). 
 This helped benchmark HydroTrack against all existing methods and identify the gaps in real-world hydration sensing and what are the most promising aprroaches. 
@@ -40,25 +45,17 @@ This helped benchmark HydroTrack against all existing methods and identify the g
 
 ***
 
-# Next-gen Hydration Research Study: Call for Participants
+# Next-gen Hydration Research Study: 
 
 I am currently leading an IRB-approved study at UMass Lowell to validate the next-generation HydroTrack device during treadmill exercise.  
 
 ### What the study involves
 - 1–2 hour laboratory session  
 - 30–60 minutes of treadmill running at a moderate pace  
-- Wearing the HydroTrack smartwatch to measure hydration levels  
-- Providing **saliva samples** at pre-, mid-, and post-workout stages  
+- Wearing the wristband to measure hydration levels  
+- Providing **saliva samples** pre- and post-workout stages    
 
-### Eligibility Requirements
-- Healthy, physically active, comfortable running for ≥30 minutes  
-- No cardiovascular or respiratory conditions affecting hydration  
-
-### Compensation
-- **$25 gift card** upon completion    
-
-### Contact  
-📧 **nazimahmed_belabbaci@uml.edu**  
+### Call for Participants
 
 ![Hydration Study Flyer](hydrotrack_flyer.jpg)
 
