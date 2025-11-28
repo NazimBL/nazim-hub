@@ -4,5 +4,7 @@
 _site
 .Rhistory
 site_libs
+_freeze/
+
 
 **/*.quarto_ipynb
