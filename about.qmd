@@ -2,16 +2,12 @@
 title: "About"
 toc: true
 toc-location: left
-preview: images/john_dancing.jpg
 lightbox: true
 execute: 
   echo: false
   warning: false
 ---
 
-```{r setup}
-source("_common.R")
-```
 
 Welcome! I am a researcher, engineer, scientist and soon to be PhD. See my [cv](cv/nazim_hub_resume_202511.pdf) for more details
 

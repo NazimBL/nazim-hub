@@ -5,9 +5,7 @@ execute:
   warning: false
 ---
 
-```{r setup}
-source("_common.R")
-```
+
 
 :::float-left
 
@@ -22,11 +20,10 @@ source("_common.R")
 
 <br>
 
-```{r}
-icon_link(
-    text = "Return to home",
-    url  = "https://nazimbl.github.io/nazim-hub"
-)
-```
+<p style="text-align:center;">
+  <a class="btn btn-primary" href="https://nazimbl.github.io/nazim-hub">
+    Return to home
+  </a>
+</p>
 
 :::

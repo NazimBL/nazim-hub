@@ -1,12 +1,11 @@
 Type: Website
-Package: jhelvy.com
-Title: John Paul Helveston
+Package: nazimbl.github.io/nazim-hub
+Title: Nazim Belabbaci
 Authors@R: c(
-    person(given   = "John",
-           family  = "Helveston",
-           role    = c("aut", "cre", "cph"),
-           email   = "john.helveston@gmail.com",
-           comment = c(ORCID = "0000-0002-2657-9191")))
+    person(given   = "Nazim Ahmed",
+           family  = "Belabbaci",
+           email   = "bellabaci.nazim@gmail.com",
+           comment = c(ORCID = "0009-0006-8380-9818")))
 Depends: R (>= 4.0.2)
 License: CC-BY-SA
 Encoding: UTF-8

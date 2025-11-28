@@ -1,0 +1,15 @@
+{
+  "hash": "d2f478534f578c8b57d735663ae8c860",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Research\"\nexecute: \n  echo: false\n  message: false\n  warning: false\nformat: html \ntoc: true\ntoc-location: left\n---\nI have worked in multiple labs and collaborated with researchers from diverse discipline. \nMy work centers on wearable sensing, designing and analyzing data from wearable/portable devices that measure physiological signals in real time. I’m particularly interested in running AI models on embedded hardware, bridging the gap between sensing and intelligent on-device computation.\n\nI also conduct computational research using high-performance computing (HPC) to analyze large-scale datasets such as genomics, EHR, and spectroscopy data. \n\nMy Ph.D. thesis involves an integrated framework that addresses two critical challenges in biomedical AI: data scarcity and poor generalization. My hypothesis is that by combining domain knowledge, hardware–AI co-design, and generative models, we can create synthetic biomedical data to enhance sensing + modeling.\nMy main application is a continuation of my Master's work : A non-invasive wearable Hydration Tracking device.\n\nYou can explore these projects in more detail on my [Projects Page](projects.qmd).\n<!-- Remove margin under list items -->\n\n<style>\nol {\n    margin-bottom: 5px;\n}\np {\n  margin: 5px 0 0 0;\n}\n</style>\n\n\n::: {.cell}\n\n:::\n\n\n\n**Research focus**\n\n- Wearables & Digital Biomarkers  \n- Computational Spectroscopy & Biomedical Sensing \n- Neurotechnology & Brain–Computer Interfaces  \n- Computational Genomics & Bioinformatics\n- Clinical Data Science (EHR/omics; robust, reproducible pipelines)\n\n<center>\n\n[View my full CV here](cv/nazim_hub_resume_202511.pdf)\n\n`<a href=\"https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;user=f7QBAtEAAAAJ\" class=\"icon-link\" target=\"_blank\" rel=\"noopener\"><i class=\"ai ai-google-scholar\"></i> Google Scholar</a><a href=\"https://orcid.org/0009-0006-8380-9818\" class=\"icon-link\" target=\"_blank\" rel=\"noopener\"><i class=\"ai ai-orcid\"></i> ORCID</a><a href=\"https://www.researchgate.net/profile/Nazim-Belabbaci\" class=\"icon-link\" target=\"_blank\" rel=\"noopener\"><i class=\"ai ai-researchgate\"></i> Research Gate</a>`{=html}\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
