@@ -1,1 +1,1 @@
-Sitemap: https://NazimBL.github.io/nazim-hub/sitemap.xml
+Sitemap: https://nazimbl.github.io/nazim-hub/sitemap.xml
