@@ -25,6 +25,11 @@ about:
 
 ---
 
+```{r setup}
+source("_common.R")
+```
+
+
 ### Welcome!
 
 I am a Research Engineer/Scientist with a solid background in electronics and software/hardware integration. My work focuses on applying AI and biosensing to develop reliable (and cool) wearable health monitoring systems. 

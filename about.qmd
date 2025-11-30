@@ -39,11 +39,6 @@ As part of this interest, I experimented with small algorithms for swing-trading
 
 Although this remains a personal hobby, it aligns well with the analytical mindset I bring to my research : identifying patterns, testing hypotheses, building models, and evaluating their performance over time.
 
-<center>
-![](images/quant_chart_ta.jpg){width=70% .external}
-</center>
-
-
 
 Outside research, I enjoy going to the gym, watching sports, traveling, writing, and I like to think I'm pretty good at soccer and pool.
 
