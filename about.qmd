@@ -9,7 +9,7 @@ execute:
 ---
 
 
-Welcome to my webiste! I am a researcher, engineer, scientist and soon to be PhD. See my [cv](cv/nazim_hub_resume_202511.pdf) for more details
+Welcome to my webiste! I am a researcher, engineer, scientist and soon to be PhD. See my [cv](cv/cv.pdf) for more details
 
 # Short Bio
 

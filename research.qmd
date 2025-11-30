@@ -52,7 +52,7 @@ pubs <- get_pubs()
 
 <center>
 
-[View my full CV here](cv/nazim_hub_resume_202511.pdf)
+[View my full CV here](cv/cv.pdf)
 
 `r htmltools::HTML(paste0(icon_link(icon = "ai ai-google-scholar", text = "Google Scholar", url  = "https://scholar.google.com/citations?view_op=list_works&hl=en&user=f7QBAtEAAAAJ"), icon_link(icon = "ai ai-orcid", text = "ORCID", url  = "https://orcid.org/0009-0006-8380-9818"), icon_link(icon = "ai ai-researchgate", text = "Research Gate", url = "https://www.researchgate.net/profile/Nazim-Belabbaci")))`
 
