@@ -9,7 +9,7 @@ execute:
 ---
 
 
-Welcome to my webiste! I am a researcher, engineer, scientist and soon to be PhD. See my [cv](cv/cv.pdf) for more details
+Welcome to my webiste! I am a researcher, engineer, scientist and soon to be PhD. See my [cv](cv/cv.pdf) for more details.
 
 # Short Bio
 
@@ -33,7 +33,7 @@ Today, I serve as a technical advisor to [BnBe Technologies](https://bnbetechnol
 
 # Quantitative Trading & Market Analysis
 
-When I need a break from research, I like to stretch my mind in a different direction by analyzing financial markets. What began as a casual interest in technical analysis grew into a deeper study of market structure and time-series modeling. I enjoy analyzing price action, volatility , and how traders’ expectations about future price movement are built into option prices.
+When I need a break from research, I like to stretch my mind in a different direction by analyzing financial markets. What began as a casual interest in technical analysis grew into a deeper study of market structure and time-series modeling. I enjoy analyzing price action and how traders’ expectations about future price movement are built into option prices (IV).
 
 As part of this interest, I experimented with small algorithms for swing-trading signals and multi-indicator strategies, and I have built tools such as an [automated generator for TradingView](https://github.com/NazimBL/VolatilityHorizons) that visualize expected moves from option chain data.  
 

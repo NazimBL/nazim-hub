@@ -3,14 +3,16 @@ project:
   type: website
   output-dir: docs
   render:
-    - index.qmd
-    - research.qmd
-    - about.qmd
-    - projects.qmd
-    - blog/index.qmd
-    - blog/**/*.qmd
-    - posts/*.qmd
-    - projects/*
+    - "index.qmd"
+    - "research.qmd"
+    - "about.qmd"
+    - "projects.qmd"
+    - "blog/index.qmd"
+    - "blog/**/*.qmd"
+    - "posts/*.qmd"
+    - "404.qmd"
+    - "projects/*"
+    - "cv/*"
 
 website:
   title: "nazim-hub.com"
