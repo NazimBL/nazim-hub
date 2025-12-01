@@ -33,7 +33,7 @@ Today, I serve as a technical advisor to [BnBe Technologies](https://bnbetechnol
 
 # Quantitative Trading & Market Analysis
 
-OWhen I need a break from my primary research, I like to stretch my mind in a different direction by analyzing financial markets. What began as a casual interest in technical analysis grew into a deeper study of market structure and time-series modeling. I enjoy analyzing price action, implied volatility , and how traders’ expectations about future price movement are built into option prices.
+When I need a break from research, I like to stretch my mind in a different direction by analyzing financial markets. What began as a casual interest in technical analysis grew into a deeper study of market structure and time-series modeling. I enjoy analyzing price action, volatility , and how traders’ expectations about future price movement are built into option prices.
 
 As part of this interest, I experimented with small algorithms for swing-trading signals and multi-indicator strategies, and I have built tools such as an [automated generator for TradingView](https://github.com/NazimBL/VolatilityHorizons) that visualize expected moves from option chain data.  
 
