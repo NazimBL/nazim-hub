@@ -71,6 +71,6 @@ resources:
     - "css"
     - "splitkbcompare.html"
     - "static/"
-    - cv
+    - "cv/cv.pdf"
     - "projects/**/*.mp4"
     - ".nojekyll"
