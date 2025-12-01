@@ -9,7 +9,7 @@ about:
   template: trestles
   links:
     - text: '<i class="ai ai-cv fa-lg"></i>'            # academicons
-      href: cv/cv.pdf
+      href: https://nazimbl.github.io/nazim-hub/cv/cv.pdf
     - icon: github                                      # bootstrap-icons
       href: https://github.com/NazimBL
     - icon: linkedin

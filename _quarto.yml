@@ -51,6 +51,7 @@ website:
 format:
   html:
     theme: [default, css/theme.scss]
+    lib-dir: site_libs
     anchor-sections: true
     smooth-scroll: true
     link-external-newwindow: true
