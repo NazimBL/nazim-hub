@@ -72,4 +72,4 @@ I am currently leading an IRB-approved study at UMass Lowell to validate the nex
   → [Read on JMIR](https://mhealth.jmir.org/2025/1/e60569)
 
 - **Master’s Thesis** – *A Prototype Smartwatch Utilizing Spectroscopy for Real-Time Monitoring of Hydration Status*, UMass Lowell 2024.  
-  → [Download PDF](files/Nazim_HydroTrack_Thesis.pdf)
+  → [Download PDF](Nazim_HydroTrack_Thesis.pdf)
