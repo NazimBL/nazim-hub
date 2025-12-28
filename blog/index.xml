@@ -9,7 +9,7 @@
 <link>https://nazimbl.github.io/nazim-hub/blog/</link>
 <atom:link href="https://nazimbl.github.io/nazim-hub/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>I am a Research Engineer/Scientist with a solid background in electronics and software/hardware integration. My work focuses on applying AI and biosensing to develop reliable (and cool) wearable health monitoring systems. I am always exploring innovative ways to translate technological advances into meaningful healthcare impact.</description>
-<generator>quarto-1.8.25</generator>
+<generator>quarto-1.8.26</generator>
 <lastBuildDate>Tue, 11 Nov 2025 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Hello, world</title>
