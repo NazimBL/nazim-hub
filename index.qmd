@@ -32,7 +32,5 @@ source("_common.R")
 
 ### Welcome!
 
-I am a Research Engineer/Scientist with a solid background in electronics and software/hardware integration. My work focuses on applying AI and biosensing to develop reliable (and cool) wearable health monitoring systems. 
-
-I am always exploring innovative ways to translate technological advances into meaningful healthcare impact.
+I am a Research Engineer/Scientist, I build end-to-end AI systems for health from data aquisition and hardware–AI co-design to representation learning and deployment. My work integrates multiple biomedical data modalities, and more recently, generative models to uncover clinically meaningful digital biomarkers and enable scalable, data-driven healthcare.
 
