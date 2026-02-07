@@ -7,8 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Nazim Ahmed Belabbaci">
+<meta name="dcterms.date" content="2026-02-06">
+<meta name="description" content="Exploring the power of multi-agent collaboration for scientific research with AutoGen and a custom secure architecture.">
 
-<title>Blog – nazim-hub.com</title>
+<title>Scholar Agent Room: multi-agent room for scientific brainstorming – nazim-hub.com</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,27 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../images/favicon/favicon_nika.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-eddb3962ab3645cc72203ba2d14d9642.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/favicon/favicon_nika.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-eddb3962ab3645cc72203ba2d14d9642.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,35 +72,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <!-- academic icons -->
 
@@ -125,37 +96,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="alternate" type="application/rss+xml" title="nazim-hub.com" href="index.xml" data-external="1"></head>
+</head>
 
 <body class="floating nav-fixed quarto-light">
 
@@ -164,7 +106,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">nazim-hub.com</span>
     </a>
   </div>
@@ -175,19 +117,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../research.html"> 
+    <a class="nav-link" href="../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../blog/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -201,20 +143,44 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#the-new-era-of-creation" id="toc-the-new-era-of-creation" class="nav-link active" data-scroll-target="#the-new-era-of-creation">The New Era of Creation</a></li>
+  <li><a href="#enter-scholar-agent-room" id="toc-enter-scholar-agent-room" class="nav-link" data-scroll-target="#enter-scholar-agent-room">Enter: Scholar Agent Room</a>
+  <ul class="collapse">
+  <li><a href="#what-it-does" id="toc-what-it-does" class="nav-link" data-scroll-target="#what-it-does">What it does</a></li>
+  <li><a href="#modes-of-operation" id="toc-modes-of-operation" class="nav-link" data-scroll-target="#modes-of-operation">Modes of Operation</a></li>
+  <li><a href="#privacy-and-architecture" id="toc-privacy-and-architecture" class="nav-link" data-scroll-target="#privacy-and-architecture">Privacy and Architecture</a></li>
+  </ul></li>
+  <li><a href="#future-work" id="toc-future-work" class="nav-link" data-scroll-target="#future-work">Future Work</a></li>
+  </ul>
+</nav>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(3)</span></div><div class="category" data-category="YWdlbnRz">agents <span class="quarto-category-count">(2)</span></div><div class="category" data-category="YWk=">ai <span class="quarto-category-count">(2)</span></div><div class="category" data-category="YXV0b2dlbg==">autogen <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29kaW5n">coding <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cXVhcnRv">quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cmVzZWFyY2g=">research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dXBkYXRlcw==">updates <span class="quarto-category-count">(1)</span></div></div></div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
+<h1 class="title">Scholar Agent Room: multi-agent room for scientific brainstorming</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">ai</div>
+    <div class="quarto-category">agents</div>
+    <div class="quarto-category">autogen</div>
+    <div class="quarto-category">coding</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    Exploring the power of multi-agent collaboration for scientific research with AutoGen and a custom secure architecture.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -226,6 +192,12 @@ window.Quarto = {
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026-02-06</p>
+    </div>
+  </div>
   
     
   </div>
@@ -235,119 +207,57 @@ window.Quarto = {
 </header>
 
 
-
-
-
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="YWklMkNhZ2VudHMlMkNhdXRvZ2VuJTJDY29kaW5n" data-listing-date-sort="1770354000000" data-listing-file-modified-sort="1770426220762" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="543">
-<div class="thumbnail"><a href="../blog/2026-02-06-scholar-agent-room/index.html" class="no-external">
-
-<img loading="lazy" src="../blog/2026-02-06-scholar-agent-room/thumnail.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/2026-02-06-scholar-agent-room/index.html" class="no-external">Scholar Agent Room: multi-agent room for scientific brainstorming</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWk='); return false;">ai</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWdlbnRz'); return false;">agents</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YXV0b2dlbg=='); return false;">autogen</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kaW5n'); return false;">coding</div>
-
+<p>This post is the first in a series on “Agentic AI Programming” where I’ll experiment with different tools, agents, and ADKs (Agent Development Kits) I’ve tried. I will be sharing my experience compared to how the tools are advertized.</p>
+<section id="the-new-era-of-creation" class="level2">
+<h2 class="anchored" data-anchor-id="the-new-era-of-creation">The New Era of Creation</h2>
+<p>I always thought coding was like having a super power. But this brings content and software creation to the next level (no wonder why the stock market is freaking out). I can’t remember the last time I was this excited about creating and developing solutions.</p>
+<p>At the same time, I feel a little bit .frustrated that I don’t have enough time to test, and evaluate every idea I have. I’m in the last semester of my PhD, facing tons of obligations. The frustration persists because I see so many people doing cool things despite their obligations, so I can’t find excuses. I just don’t want to be left behind. (Note: some of the things I wrote in my <a href="../../blog/2025-12-30-my thoughts on AI and Agent Coding tools/index.html">previous post</a> are already kind of deprecated! That’s how fast things move.)</p>
+</section>
+<section id="enter-scholar-agent-room" class="level2">
+<h2 class="anchored" data-anchor-id="enter-scholar-agent-room">Enter: Scholar Agent Room</h2>
+<p>Since I was working on some grant writing, I decided to take the opportunity to investigate a specific aspect of Agentic AI: Multi-Agent Conversational Systems. I read good things about AutoGen in the scope of conversational chat rooms, so that’s what I decided to go with for this project.</p>
+<p>The result is the <a href="https://github.com/NazimBL/ScholarAgentRoom">ScholarAgentRoom</a> — an expert multi-agent room designed specifically for scientific brainstorming.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="agentroom1.png" class="img-fluid figure-img"></p>
+<figcaption>Scholar Agent Room Interface</figcaption>
+</figure>
 </div>
-<div class="delink listing-description"><a href="../blog/2026-02-06-scholar-agent-room/index.html" class="no-external">
-<p>Exploring the power of multi-agent collaboration for scientific research with AutoGen and a custom secure architecture.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/2026-02-06-scholar-agent-room/index.html" class="no-external">
-<div class="listing-date">
-2026-02-06
-</div>
-<div class="listing-author">
-Nazim Ahmed Belabbaci
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="YWklMkNjb2RpbmclMkNhZ2VudHM=" data-listing-date-sort="1767070800000" data-listing-file-modified-sort="1767149370454" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="802">
-<div class="thumbnail"><a href="../blog/2025-12-30-my thoughts on AI and Agent Coding tools/index.html" class="no-external">
+<section id="what-it-does" class="level3">
+<h3 class="anchored" data-anchor-id="what-it-does">What it does</h3>
+<p>The goal was to build a system that could act as a rigorous scientific panel. I set up four specialized agents, each with focused system prompts to simulate a real academic review board:</p>
+<ul>
+<li><strong>BioExpert</strong>: Focuses on mechanistic plausibility and experimental feasibility.</li>
+<li><strong>AIExpert</strong>: Handles data requirements, modeling strategies, and evaluation metrics.</li>
+<li><strong>Reviewer</strong>: Adopts an “NIH-style” rigor to provide critical feedback and identify weaknesses.</li>
+<li><strong>GrantsWriter</strong>: Ensures clarity, significance, and proper innovation framing.</li>
+</ul>
+</section>
+<section id="modes-of-operation" class="level3">
+<h3 class="anchored" data-anchor-id="modes-of-operation">Modes of Operation</h3>
+<p>I wanted flexibility, so I implemented two modes:</p>
+<ol type="1">
+<li><strong>Freestyle</strong>: A more relaxed, open-ended discussion where agents freely exchange ideas.</li>
+<li><strong>Evidence Mode</strong>: This is where it gets interesting. Agents are forced to structure their critiques using a strict framework: <em>Claim – Evidence – Risk – Improvement – Confidence</em>. This prevents hallucination and vague feedback.</li>
+</ol>
+</section>
+<section id="privacy-and-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="privacy-and-architecture">Privacy and Architecture</h3>
+<p>One critical aspect of this project was privacy. We do not want our research ideas flying off to a public API log somewhere.</p>
+<p>I set up the infrastructure to run on a remote GPU cluster, accessed securely via an SSH tunnel. The local UI connects through this tunnel to the backend on the cluster, which then talks to a local LLM server. This ensures that while I use a nice web interface locally, the heavy lifting happens on the cluster, and everything stays private and encrypted.</p>
+</section>
+</section>
+<section id="future-work" class="level2">
+<h2 class="anchored" data-anchor-id="future-work">Future Work</h2>
+<p>Like everything in this space, this project could have so many iterations and directions. The repository itself lists plenty of future enhancements, from “Agent Memory” to “Team Variants” like swarm behaviors.</p>
+<p>I’m really looking forward to seeing what my fellow collaborators and professors think about it. It’s an experimental tool, but it feels like a glimpse into how we’ll all be doing research fundamentally differently in the very soon.</p>
+<p>Check out the code and the full breakdown on the repo:<br>
+<a href="https://github.com/NazimBL/ScholarAgentRoom"><strong>github.com/NazimBL/ScholarAgentRoom</strong></a></p>
 
-<img loading="lazy" src="../blog/2025-12-30-my thoughts on AI and Agent Coding tools/figure.png" class="thumbnail-image">
 
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/2025-12-30-my thoughts on AI and Agent Coding tools/index.html" class="no-external">My thoughts on AI and Agent Coding tools</a>
-</h3>
-<div class="listing-categories">
+</section>
 
-<div class="listing-category" onclick="window.quartoListingCategory('YWk='); return false;">ai</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kaW5n'); return false;">coding</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWdlbnRz'); return false;">agents</div>
-
-</div>
-<div class="delink listing-description"><a href="../blog/2025-12-30-my thoughts on AI and Agent Coding tools/index.html" class="no-external">
-<p>Thoughts on the rapid refactoring of programming by AI agents, new workflows, and list of the environments I will start 2026 with !</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/2025-12-30-my thoughts on AI and Agent Coding tools/index.html" class="no-external">
-<div class="listing-date">
-2025-12-30
-</div>
-<div class="listing-author">
-Nazim Ahmed Belabbaci
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="cXVhcnRvJTJDcmVzZWFyY2glMkN1cGRhdGVz" data-listing-date-sort="1762837200000" data-listing-file-modified-sort="1766865062032" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail"><a href="../blog/2025-11-11-stay-tuned/index.html" class="no-external">
-
-<img loading="lazy" src="../blog/2025-11-11-stay-tuned/figure.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/2025-11-11-stay-tuned/index.html" class="no-external">Hello, world</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cXVhcnRv'); return false;">quarto</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cmVzZWFyY2g='); return false;">research</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dXBkYXRlcw=='); return false;">updates</div>
-
-</div>
-<div class="delink listing-description"><a href="../blog/2025-11-11-stay-tuned/index.html" class="no-external">
-<p>First post! I’ll use this space for short notes, stay tuned !</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/2025-11-11-stay-tuned/index.html" class="no-external">
-<div class="listing-date">
-2025-11-11
-</div>
-<div class="listing-author">
-Nazim Ahmed Belabbaci
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -775,5 +685,5 @@ Nazim Ahmed Belabbaci
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

@@ -32,4 +32,4 @@ source("_common.R")
 
 ### Welcome!
 
-I view the human body as the most sophisticated engineered system we know. My work combines electronics, genomics, biomedical data, and AI to understand this complexity, identify meaningful patterns, and translate them into real-world health insights
+I view the human body as the most complex engineered system we know. My work combines electronics, genomics, biomedical data, and AI to understand this complexity, identify meaningful patterns, and translate them into real-world health insights

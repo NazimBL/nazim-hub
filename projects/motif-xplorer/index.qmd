@@ -7,8 +7,9 @@ toc: false
 
 ## Overview
 
-**MotifXplorer** is a **genomic peak analysis web tool** built to help researchers and clinicians  
-analyze ChIP-seq peaks *without* having to write code or understand the details of machine learning.
+MotifXplorer is now online at this address : [motifxplorer.med.und.edu](https://motifxplorer.med.und.edu/)
+
+**MotifXplorer** is a **genomic peak analysis web tool** built to help researchers and clinicians analyze transcription factor binding sites (TFBS) from ChIP-seq peak data *without* having to write code or understand the details of machine learning.
 
 How it works:
 
@@ -19,8 +20,7 @@ How it works:
   - Feature importance metrics
   - Optional motif analysis and decision tree visualization
 
-MotifXplorer is being developed in collaboration with **Dr. Motoki Takaku’s lab** and **Mounir Ouadi**.  
-The back end and web front end are fully functional; we are currently finalizing deployment on a public server so external labs can start using it.
+MotifXplorer was developed in collaboration with **Dr. Motoki Takaku’s lab** and **Mounir Ouadi**. 
 
 ---
 

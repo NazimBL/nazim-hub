@@ -10,7 +10,75 @@
 <atom:link href="https://nazimbl.github.io/nazim-hub/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>I am a Research Engineer/Scientist with a solid background in electronics and software/hardware integration. My work focuses on applying AI and biosensing to develop reliable (and cool) wearable health monitoring systems. I am always exploring innovative ways to translate technological advances into meaningful healthcare impact.</description>
 <generator>quarto-1.8.26</generator>
-<lastBuildDate>Tue, 30 Dec 2025 05:00:00 GMT</lastBuildDate>
+<lastBuildDate>Fri, 06 Feb 2026 05:00:00 GMT</lastBuildDate>
+<item>
+  <title>Scholar Agent Room: multi-agent room for scientific brainstorming</title>
+  <dc:creator>Nazim Ahmed Belabbaci</dc:creator>
+  <link>https://nazimbl.github.io/nazim-hub/blog/2026-02-06-scholar-agent-room/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>This post is the first in a series on “Agentic AI Programming” where I’ll experiment with different tools, agents, and ADKs (Agent Development Kits) I’ve tried. I will be sharing my experience compared to how the tools are advertized.</p>
+<section id="the-new-era-of-creation" class="level2">
+<h2 class="anchored" data-anchor-id="the-new-era-of-creation">The New Era of Creation</h2>
+<p>I always thought coding was like having a super power. But this brings content and software creation to the next level (no wonder why the stock market is freaking out). I can’t remember the last time I was this excited about creating and developing solutions.</p>
+<p>At the same time, I feel a little bit .frustrated that I don’t have enough time to test, and evaluate every idea I have. I’m in the last semester of my PhD, facing tons of obligations. The frustration persists because I see so many people doing cool things despite their obligations, so I can’t find excuses. I just don’t want to be left behind. (Note: some of the things I wrote in my <a href="../../blog/2025-12-30-my thoughts on AI and Agent Coding tools/index.html">previous post</a> are already kind of deprecated! That’s how fast things move.)</p>
+</section>
+<section id="enter-scholar-agent-room" class="level2">
+<h2 class="anchored" data-anchor-id="enter-scholar-agent-room">Enter: Scholar Agent Room</h2>
+<p>Since I was working on some grant writing, I decided to take the opportunity to investigate a specific aspect of Agentic AI: Multi-Agent Conversational Systems. I read good things about AutoGen in the scope of conversational chat rooms, so that’s what I decided to go with for this project.</p>
+<p>The result is the <a href="https://github.com/NazimBL/ScholarAgentRoom">ScholarAgentRoom</a> — an expert multi-agent room designed specifically for scientific brainstorming.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://nazimbl.github.io/nazim-hub/blog/2026-02-06-scholar-agent-room/agentroom1.png" class="img-fluid figure-img"></p>
+<figcaption>Scholar Agent Room Interface</figcaption>
+</figure>
+</div>
+<section id="what-it-does" class="level3">
+<h3 class="anchored" data-anchor-id="what-it-does">What it does</h3>
+<p>The goal was to build a system that could act as a rigorous scientific panel. I set up four specialized agents, each with focused system prompts to simulate a real academic review board:</p>
+<ul>
+<li><strong>BioExpert</strong>: Focuses on mechanistic plausibility and experimental feasibility.</li>
+<li><strong>AIExpert</strong>: Handles data requirements, modeling strategies, and evaluation metrics.</li>
+<li><strong>Reviewer</strong>: Adopts an “NIH-style” rigor to provide critical feedback and identify weaknesses.</li>
+<li><strong>GrantsWriter</strong>: Ensures clarity, significance, and proper innovation framing.</li>
+</ul>
+</section>
+<section id="modes-of-operation" class="level3">
+<h3 class="anchored" data-anchor-id="modes-of-operation">Modes of Operation</h3>
+<p>I wanted flexibility, so I implemented two modes:</p>
+<ol type="1">
+<li><strong>Freestyle</strong>: A more relaxed, open-ended discussion where agents freely exchange ideas.</li>
+<li><strong>Evidence Mode</strong>: This is where it gets interesting. Agents are forced to structure their critiques using a strict framework: <em>Claim – Evidence – Risk – Improvement – Confidence</em>. This prevents hallucination and vague feedback.</li>
+</ol>
+</section>
+<section id="privacy-and-architecture" class="level3">
+<h3 class="anchored" data-anchor-id="privacy-and-architecture">Privacy and Architecture</h3>
+<p>One critical aspect of this project was privacy. We do not want our research ideas flying off to a public API log somewhere.</p>
+<p>I set up the infrastructure to run on a remote GPU cluster, accessed securely via an SSH tunnel. The local UI connects through this tunnel to the backend on the cluster, which then talks to a local LLM server. This ensures that while I use a nice web interface locally, the heavy lifting happens on the cluster, and everything stays private and encrypted.</p>
+</section>
+</section>
+<section id="future-work" class="level2">
+<h2 class="anchored" data-anchor-id="future-work">Future Work</h2>
+<p>Like everything in this space, this project could have so many iterations and directions. The repository itself lists plenty of future enhancements, from “Agent Memory” to “Team Variants” like swarm behaviors.</p>
+<p>I’m really looking forward to seeing what my fellow collaborators and professors think about it. It’s an experimental tool, but it feels like a glimpse into how we’ll all be doing research fundamentally differently in the very soon.</p>
+<p>Check out the code and the full breakdown on the repo:<br>
+<a href="https://github.com/NazimBL/ScholarAgentRoom"><strong>github.com/NazimBL/ScholarAgentRoom</strong></a></p>
+
+
+</section>
+
+ ]]></description>
+  <category>ai</category>
+  <category>agents</category>
+  <category>autogen</category>
+  <category>coding</category>
+  <guid>https://nazimbl.github.io/nazim-hub/blog/2026-02-06-scholar-agent-room/</guid>
+  <pubDate>Fri, 06 Feb 2026 05:00:00 GMT</pubDate>
+  <media:content url="https://nazimbl.github.io/nazim-hub/blog/2026-02-06-scholar-agent-room/thumnail.png" medium="image" type="image/png" height="79" width="144"/>
+</item>
 <item>
   <title>My thoughts on AI and Agent Coding tools</title>
   <dc:creator>Nazim Ahmed Belabbaci</dc:creator>
