@@ -13,7 +13,7 @@ This post is the first in a series on "Agentic AI Programming" where I’ll expe
 
 I always thought coding was like having a super power. But this brings content and software creation to the next level (no wonder why the stock market is freaking out). I can’t remember the last time I was this excited about creating and developing solutions. 
 
-At the same time, I feel a little bit .frustrated that I don't have enough time to test, and evaluate every idea I have. I'm in the last semester of my PhD, facing tons of obligations. The frustration persists because I see so many people doing cool things despite their obligations, so I can't find excuses. I just don't want to be left behind. (Note: some of the things I wrote in my [previous post](../2025-12-30-my%20thoughts%20on%20AI%20and%20Agent%20Coding%20tools/index.qmd) are already kind of deprecated! That's how fast things move.)
+At the same time, I feel a little bit frustrated that I don't have enough time to test, and evaluate every idea I have. I'm in the last semester of my PhD, facing tons of obligations. The frustration persists because I see so many people doing cool things despite their obligations, so I can't find excuses. I just don't want to be left behind. (Note: some of the things I wrote in my [previous post](../2025-12-30-my%20thoughts%20on%20AI%20and%20Agent%20Coding%20tools/index.qmd) are already kind of deprecated! That's how fast things move.)
 
 ## Enter: Scholar Agent Room
 
@@ -50,7 +50,7 @@ I set up the infrastructure to run on a remote GPU cluster, accessed securely vi
 
 Like everything in this space, this project could have so many iterations and directions. The repository itself lists plenty of future enhancements, from "Agent Memory" to "Team Variants" like swarm behaviors.
 
-I’m really looking forward to seeing what my fellow collaborators and professors think about it. It’s an experimental tool, but it feels like a glimpse into how we’ll all be doing research fundamentally differently in the very soon.
+I’m really looking forward to seeing what my fellow collaborators and professors think about it. It’s an experimental tool, but it feels like a glimpse into how we’ll all be doing research fundamentally different in the very soon.
 
 Check out the code and the full breakdown on the repo:  
 [**github.com/NazimBL/ScholarAgentRoom**](https://github.com/NazimBL/ScholarAgentRoom)

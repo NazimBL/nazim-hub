@@ -25,7 +25,7 @@ for Local inference (privacy) : ollama running deepseek-coder-v2 connected back 
 
 - Stronger "agent-centric" UX
 - Great for multi-file refactors and feature work in research codebases
-- Free tier exists but is limited; heavy agent use typically pushes you to paid
+- Free tier exists but is limited; heavy agent use typically pushes you to pay subscription
 
 Note: I got these results by giving details about the workflows I develop and my research, so expect to get different responses with different prompting details.
 
@@ -34,7 +34,7 @@ I believe it will still be hard to define "the best tools" given the difficultie
 
 With all this being said, programming and coding, in my opinion, can be as subjective as driving a car. Here's how I see it: agents in coding are like AI-assisted driving, Vibe coding on the other hand is like automatic gear cars. It's still necessary to be able to have control and take control of the wheels, while some enjoy the old-fashioned manual gear.
 
-This analogy doesn't hold in terms of productivity though. I'm 100% convinced that agent/AI-helped coding can and will make us exponentially better, faster, and more productive. It's a matter of how much and how, picking the right tools that fit you, and not being left behind.
+This analogy doesn't hold in terms of productivity though. I'm 100% convinced that agent/AI-helped coding can and will make us exponentially better, faster, and more productive. It's a matter of how much and how as well as picking the right tools that fit you, and not being left behind.
 
 ## My Setup
 
