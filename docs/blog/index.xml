@@ -9,7 +9,7 @@
 <link>https://nazimbl.github.io/nazim-hub/blog/</link>
 <atom:link href="https://nazimbl.github.io/nazim-hub/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>I am a Research Engineer/Scientist with a solid background in electronics and software/hardware integration. My work focuses on applying AI and biosensing to develop reliable (and cool) wearable health monitoring systems. I am always exploring innovative ways to translate technological advances into meaningful healthcare impact.</description>
-<generator>quarto-1.8.26</generator>
+<generator>quarto-1.10.18</generator>
 <lastBuildDate>Fri, 06 Feb 2026 05:00:00 GMT</lastBuildDate>
 <item>
   <title>Scholar Agent Room: multi-agent room for scientific brainstorming</title>
@@ -24,7 +24,7 @@
 <section id="the-new-era-of-creation" class="level2">
 <h2 class="anchored" data-anchor-id="the-new-era-of-creation">The New Era of Creation</h2>
 <p>I always thought coding was like having a super power. But this brings content and software creation to the next level (no wonder why the stock market is freaking out). I can’t remember the last time I was this excited about creating and developing solutions.</p>
-<p>At the same time, I feel a little bit .frustrated that I don’t have enough time to test, and evaluate every idea I have. I’m in the last semester of my PhD, facing tons of obligations. The frustration persists because I see so many people doing cool things despite their obligations, so I can’t find excuses. I just don’t want to be left behind. (Note: some of the things I wrote in my <a href="../../blog/2025-12-30-my thoughts on AI and Agent Coding tools/index.html">previous post</a> are already kind of deprecated! That’s how fast things move.)</p>
+<p>At the same time, I feel a little bit frustrated that I don’t have enough time to test, and evaluate every idea I have. I’m in the last semester of my PhD, facing tons of obligations. The frustration persists because I see so many people doing cool things despite their obligations, so I can’t find excuses. I just don’t want to be left behind. (Note: some of the things I wrote in my <a href="../../blog/2025-12-30-my thoughts on AI and Agent Coding tools/index.html">previous post</a> are already kind of deprecated! That’s how fast things move.)</p>
 </section>
 <section id="enter-scholar-agent-room" class="level2">
 <h2 class="anchored" data-anchor-id="enter-scholar-agent-room">Enter: Scholar Agent Room</h2>
@@ -63,7 +63,7 @@
 <section id="future-work" class="level2">
 <h2 class="anchored" data-anchor-id="future-work">Future Work</h2>
 <p>Like everything in this space, this project could have so many iterations and directions. The repository itself lists plenty of future enhancements, from “Agent Memory” to “Team Variants” like swarm behaviors.</p>
-<p>I’m really looking forward to seeing what my fellow collaborators and professors think about it. It’s an experimental tool, but it feels like a glimpse into how we’ll all be doing research fundamentally differently in the very soon.</p>
+<p>I’m really looking forward to seeing what my fellow collaborators and professors think about it. It’s an experimental tool, but it feels like a glimpse into how we’ll all be doing research fundamentally different in the very soon.</p>
 <p>Check out the code and the full breakdown on the repo:<br>
 <a href="https://github.com/NazimBL/ScholarAgentRoom"><strong>github.com/NazimBL/ScholarAgentRoom</strong></a></p>
 
@@ -100,12 +100,12 @@
 <ul>
 <li>Stronger “agent-centric” UX</li>
 <li>Great for multi-file refactors and feature work in research codebases</li>
-<li>Free tier exists but is limited; heavy agent use typically pushes you to paid</li>
+<li>Free tier exists but is limited; heavy agent use typically pushes you to pay subscription</li>
 </ul>
 <p>Note: I got these results by giving details about the workflows I develop and my research, so expect to get different responses with different prompting details.</p>
 <p>I believe it will still be hard to define “the best tools” given the difficulties mentioned in the post above and the intensity of AI agent competition. While I was writing this, I took a break and came across an article about Meta acquiring Magnus, a Chinese startup that has advanced agent intelligence that can independently research, plan, and execute multiple tasks.</p>
 <p>With all this being said, programming and coding, in my opinion, can be as subjective as driving a car. Here’s how I see it: agents in coding are like AI-assisted driving, Vibe coding on the other hand is like automatic gear cars. It’s still necessary to be able to have control and take control of the wheels, while some enjoy the old-fashioned manual gear.</p>
-<p>This analogy doesn’t hold in terms of productivity though. I’m 100% convinced that agent/AI-helped coding can and will make us exponentially better, faster, and more productive. It’s a matter of how much and how, picking the right tools that fit you, and not being left behind.</p>
+<p>This analogy doesn’t hold in terms of productivity though. I’m 100% convinced that agent/AI-helped coding can and will make us exponentially better, faster, and more productive. It’s a matter of how much and how as well as picking the right tools that fit you, and not being left behind.</p>
 </section>
 <section id="my-setup" class="level2">
 <h2 class="anchored" data-anchor-id="my-setup">My Setup</h2>

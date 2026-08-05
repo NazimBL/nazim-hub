@@ -9,11 +9,11 @@ execute:
 ---
 
 
-Welcome to my webiste! I am a researcher, engineer, scientist and soon to be PhD. See my [cv](cv/cv.pdf) for more details.
+Welcome to my webiste! I am a researcher, engineer, scientist. See my [cv](cv/cv.pdf) for more details.
 
 # Short Bio
 
-Fluent in both human and programming languages, Nazim holds a B.S. in Electrical and Electronics Engineering and an M.Eng. in Computer Engineering from the University of Boumerdès [Institute of Electrical and Electronics Engineering](https://igee.univ-boumerdes.dz/En/index.html). He worked as an Embedded Software Engineer and later co-founded Deadline Technologies and Deadline Store, gaining hands-on experience in prototyping and product development. After completing a year of biomedical engineering and research studies at the [University of North Dakota](https://engineering.und.edu/academics/biomedical/index.html), he joined the [University of Massachusetts Lowell](https://www.uml.edu/sciences/computer-science/), where he earned an M.S. in Computer Science and is now a Ph.D. Candidate and Research Assistant. His research lies at the intersection of embedded systems, artificial intelligence, and biomedical sensing.
+Fluent in both human and programming languages, Nazim holds a B.S. in Electrical and Electronics Engineering and an M.Eng. in Computer Engineering from the University of Boumerdès [Institute of Electrical and Electronics Engineering](https://igee.univ-boumerdes.dz/En/index.html). He worked as an Embedded Software Engineer and later co-founded Deadline Technologies and Deadline Store, gaining hands-on experience in prototyping and product development. After completing a year of biomedical engineering and research studies at the [University of North Dakota](https://engineering.und.edu/academics/biomedical/index.html), he joined the [University of Massachusetts Lowell](https://www.uml.edu/sciences/computer-science/), where he earned an M.S. and Ph.D in Computer Science. His research lies at the intersection of embedded systems, artificial intelligence, and biomedical sensing.
 
 
 
