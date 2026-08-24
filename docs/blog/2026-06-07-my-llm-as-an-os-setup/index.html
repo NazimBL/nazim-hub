@@ -7,8 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Nazim Ahmed Belabbaci">
+<meta name="dcterms.date" content="2026-06-07">
+<meta name="description" content="How I turned a year of scattered Obsidian notes into a compiled, model-agnostic knowledge base that any LLM can read like a repo.">
 
-<title>Blog – nazim-hub.com</title>
+<title>My AI Setup: A Second Brain That Reads Like a Repo – nazim-hub.com</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -30,26 +32,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../images/favicon/favicon_nika.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-1c07d73451452efff9909c4d913e6cf3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/favicon/favicon_nika.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-1c07d73451452efff9909c4d913e6cf3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -77,35 +77,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 <!-- academic icons -->
 
@@ -119,37 +90,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="alternate" type="application/rss+xml" title="nazim-hub.com" href="index.xml" data-external="1"></head>
+</head>
 
 <body class="floating nav-fixed quarto-light">
 
@@ -158,7 +100,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">nazim-hub.com</span>
     </a>
   </div>
@@ -169,19 +111,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../about.html"> 
+    <a class="nav-link" href="../../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../research.html"> 
+    <a class="nav-link" href="../../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../blog/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../blog/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
 </ul>
@@ -195,20 +137,40 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Contents</h2>
+   
+  <ul>
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link active" data-scroll-target="#the-problem">The problem</a></li>
+  <li><a href="#enter-the-compiler" id="toc-enter-the-compiler" class="nav-link" data-scroll-target="#enter-the-compiler">Enter: the Compiler</a></li>
+  <li><a href="#how-i-built-mine" id="toc-how-i-built-mine" class="nav-link" data-scroll-target="#how-i-built-mine">How I built mine</a></li>
+  <li><a href="#claude.md-or-planner.md-as-a-router" id="toc-claude.md-or-planner.md-as-a-router" class="nav-link" data-scroll-target="#claude.md-or-planner.md-as-a-router">CLAUDE.md (or planner.md) as a router</a></li>
+  <li><a href="#extra-payoffs-that-matter-as-much-as-the-wiki-itself" id="toc-extra-payoffs-that-matter-as-much-as-the-wiki-itself" class="nav-link" data-scroll-target="#extra-payoffs-that-matter-as-much-as-the-wiki-itself">Extra payoffs that matter as much as the wiki itself</a></li>
+  <li><a href="#the-second-brain" id="toc-the-second-brain" class="nav-link" data-scroll-target="#the-second-brain">The second brain</a></li>
+  </ul>
+</nav>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="YWdlbnRz">agents <span class="quarto-category-count">(3)</span></div><div class="category" data-category="YWk=">ai <span class="quarto-category-count">(3)</span></div><div class="category" data-category="YXV0b2dlbg==">autogen <span class="quarto-category-count">(1)</span></div><div class="category" data-category="Y29kaW5n">coding <span class="quarto-category-count">(2)</span></div><div class="category" data-category="cXVhcnRv">quarto <span class="quarto-category-count">(1)</span></div><div class="category" data-category="cmVzZWFyY2g=">research <span class="quarto-category-count">(1)</span></div><div class="category" data-category="dXBkYXRlcw==">updates <span class="quarto-category-count">(1)</span></div></div></div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Blog</h1>
-</div>
+<h1 class="title">My AI Setup: A Second Brain That Reads Like a Repo</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">ai</div>
+    <div class="quarto-category">agents</div>
+  </div>
+  </div>
 
+<div>
+  <div class="description">
+    How I turned a year of scattered Obsidian notes into a compiled, model-agnostic knowledge base that any LLM can read like a repo.
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -220,6 +182,12 @@ window.Quarto = {
           </div>
   </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">2026-06-07</p>
+    </div>
+  </div>
   
     
   </div>
@@ -229,151 +197,47 @@ window.Quarto = {
 </header>
 
 
+<p><strong>The TLDR:</strong></p>
+<p><strong>What?</strong>: I put together a script that scans a year of scattered notes, research, and projects, tags them, links them, and compiles the result into a wiki any LLM can read.</p>
+<p><strong>So what?</strong> If you’ve had an AI assistant or chatbot, sometimes you notice it loses the thread of a long conversation, focuses on the wrong things, or forgets everything the second a new session starts. It’s not only long chats — point Claude Code, Codex, or any coding assistant at a real project and you hit the same wall from the other side: you’re either uploading way more files than the question needs, or hunting through folders trying to guess which one gives enough “context.”</p>
+<p><strong>Now what?</strong>: Every model I open now gets the same context without me re-explaining myself, none of that memory depends on one company or model, and nothing about my research or my ideas has to leave my machine to get useful answers.</p>
+<section id="the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem">The problem</h2>
+<p>You’ve felt this even if you’ve never called it “context engineering.” A long chat with ChatGPT, DeepSeek, Claude, or Gemini starts overfitting to some random fragment from five messages ago. When you haven’t set it up to remember anything, it goes the other way: full amnesia every session, re-explain yourself from zero.</p>
+<p>Neither is a model-capability problem. It’s just that nothing survives the scroll. The thing that mattered in message two is diluted by message forty, and the model has no way to tell load-bearing context from noise.</p>
+</section>
+<section id="enter-the-compiler" class="level2">
+<h2 class="anchored" data-anchor-id="enter-the-compiler">Enter: the Compiler</h2>
+<p>I got the main idea from the now well-popular Andrej Karpathy LLM wiki repo. The main takeaway from the approach described in his gist was that the correct way to use an LLM over your own knowledge isn’t Q&amp;A, it’s <em>compilation</em>. Raw material (files, code, notes) stays untouched. The LLM’s job is to read it and maintain a separate, structured layer on top: a wiki that gets rebuilt, not a chat log that gets scrolled past.</p>
+<p>Anyone who’s used a coding agent already knows why it works: those tools are noticeably better inside a real repo than in a stray folder of scripts, because a repo carries structure the model can navigate — file layout, imports, a README, commit history. A year of notes is the same raw material, just unstructured. Compiling turns it into something with the shape of a repo: tagged, cross-linked, indexed.</p>
+</section>
+<section id="how-i-built-mine" class="level2">
+<h2 class="anchored" data-anchor-id="how-i-built-mine">How I built mine</h2>
+<p>Obsidian started as a local, markdown-based note-taking app. It turned into an actual knowledge base once there was enough in it, and from there it was a short step to wiring that knowledge base into an LLM directly.</p>
+<p>I connected Obsidian to my home folder (referred to as “Vault”), then split it into three top-level folders: <code>Atlas/</code> for concepts and general notes, <code>Projects/</code> for ventures and builds, <code>Research/</code> for research and PhD-level material.</p>
+<p>On top of that sits a compiler I wrote. It scans the whole vault, finds tags and shared attributes, flags notes talking about the same thing from different folders, and writes a report. A root <code>CLAUDE.md</code> reads that report and does the actual tagging and linking pass, then compiles a second layer: the <code>Wiki/</code> layer — one page per tag, plus concept pages that pull a single subject together across folders instead of leaving it scattered as unrelated notes.</p>
+</section>
+<section id="claude.md-or-planner.md-as-a-router" class="level2">
+<h2 class="anchored" data-anchor-id="claude.md-or-planner.md-as-a-router">CLAUDE.md (or planner.md) as a router</h2>
+<p>Each project folder also gets its own scoped <code>CLAUDE.md</code>, a local router, separate from the root one. A coding project I’m building doesn’t need the same <code>CLAUDE.md</code> as the wiki compiler, and it definitely doesn’t need the one sitting in my EEG research folder, which is overfitted to EEG-specific knowledge. Each one stays scoped to its own folder instead of leaking into the others. One general <code>CLAUDE.md</code>, a <code>planner.md</code>, and a <code>memory.md</code> aren’t enough on their own — I found that scoping them per-folder is what actually solves the context problem described above.</p>
+<p>Adding to this, I’ve also got a small set of specialist agents sitting on top of the same vault (researcher, software engineer, task manager). I use them two ways: called by name directly in Claude Code, or run through a script that translates the agent files so they work with other models too. <img src="second-brain-schema.jpg" class="img-fluid"></p>
+</section>
+<section id="extra-payoffs-that-matter-as-much-as-the-wiki-itself" class="level2">
+<h2 class="anchored" data-anchor-id="extra-payoffs-that-matter-as-much-as-the-wiki-itself">Extra payoffs that matter as much as the wiki itself</h2>
+<p><strong>It’s model-agnostic.</strong> In my opinion (which could be just paranoia), current pricing for what tools like Claude Code and Codex can do is mostly labs racing each other for market share. I’m not convinced those prices and that accessibility will hold. Everything here is plain markdown, nothing locked into one vendor’s format. My daily driver is a base Claude subscription; when I run out of credits, Gemini CLI and a couple of local models pick up the slack. Point the whole setup at a different provider and nothing about the vault needs to be rebuilt.</p>
+<p><strong>It’s actually private.</strong> Nothing here depends on uploading research notes or half-formed ideas to a chatbot to get an answer. The vault lives in a private repo, and the compiler runs locally against files on my own machine.</p>
+</section>
+<section id="the-second-brain" class="level2">
+<h2 class="anchored" data-anchor-id="the-second-brain">The second brain</h2>
+<p>I’ve spent a lot of time trying to figure out the best AI tools and combinations to actually use day to day. This is the one that stuck: markdown notes, a compiler, and a wiki layer sitting on top of both. One place, one source of truth, a lot less friction picking which tool or model to use, and a lot less re-explaining myself to whatever model I happen to have open.</p>
+<p>The app I take notes in is now also my knowledge base and the repo I actually work from. I still run WSL with VS Code open next to Obsidian, but almost everything I do, day to day, happens in a terminal now.</p>
+<p>Which brings me to the Obsidian Graph view itself. I didn’t build it — it’s just what shows up once enough notes are actually linked. It’s probably the main reason this whole second-brain trend got so popular in the first place: it looks cool. Can’t lie, I was glazing the first time I saw one. Turns out it’s not just eye candy, though — a model reasoning over an explicit graph knowledge base has less room to invent a connection that isn’t actually there (GraphRAG, if you’re curious, or iykyk).</p>
+<p><img src="graphview.png" class="img-fluid"></p>
 
 
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
-<div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="YWklMkNhZ2VudHM=" data-listing-date-sort="1780804800000" data-listing-file-modified-sort="1787597017316" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1038">
-<div class="thumbnail"><a href="../blog/2026-06-07-my-llm-as-an-os-setup/index.html" class="no-external">
-
-<img loading="lazy" src="../blog/2026-06-07-my-llm-as-an-os-setup/thumbnail.jpg" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/2026-06-07-my-llm-as-an-os-setup/index.html" class="no-external">My AI Setup: A Second Brain That Reads Like a Repo</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWk='); return false;">ai</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWdlbnRz'); return false;">agents</div>
-
-</div>
-<div class="delink listing-description"><a href="../blog/2026-06-07-my-llm-as-an-os-setup/index.html" class="no-external">
-<p>How I turned a year of scattered Obsidian notes into a compiled, model-agnostic knowledge base that any LLM can read like a repo.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/2026-06-07-my-llm-as-an-os-setup/index.html" class="no-external">
-<div class="listing-date">
-2026-06-07
-</div>
-<div class="listing-author">
-Nazim Ahmed Belabbaci
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="1" data-categories="YWklMkNhZ2VudHMlMkNhdXRvZ2VuJTJDY29kaW5n" data-listing-date-sort="1770354000000" data-listing-file-modified-sort="1785185439872" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="543">
-<div class="thumbnail"><a href="../blog/2026-02-06-scholar-agent-room/index.html" class="no-external">
-
-<img loading="lazy" src="../blog/2026-02-06-scholar-agent-room/thumnail.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/2026-02-06-scholar-agent-room/index.html" class="no-external">Scholar Agent Room: multi-agent room for scientific brainstorming</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWk='); return false;">ai</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWdlbnRz'); return false;">agents</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YXV0b2dlbg=='); return false;">autogen</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kaW5n'); return false;">coding</div>
-
-</div>
-<div class="delink listing-description"><a href="../blog/2026-02-06-scholar-agent-room/index.html" class="no-external">
-<p>Exploring the power of multi-agent collaboration for scientific research with AutoGen and a custom secure architecture.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/2026-02-06-scholar-agent-room/index.html" class="no-external">
-<div class="listing-date">
-2026-02-06
-</div>
-<div class="listing-author">
-Nazim Ahmed Belabbaci
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="2" data-categories="YWklMkNjb2RpbmclMkNhZ2VudHM=" data-listing-date-sort="1767070800000" data-listing-file-modified-sort="1785185439850" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="806">
-<div class="thumbnail"><a href="../blog/2025-12-30-my thoughts on AI and Agent Coding tools/index.html" class="no-external">
-
-<img loading="lazy" src="../blog/2025-12-30-my thoughts on AI and Agent Coding tools/figure.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/2025-12-30-my thoughts on AI and Agent Coding tools/index.html" class="no-external">My thoughts on AI and Agent Coding tools</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWk='); return false;">ai</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29kaW5n'); return false;">coding</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('YWdlbnRz'); return false;">agents</div>
-
-</div>
-<div class="delink listing-description"><a href="../blog/2025-12-30-my thoughts on AI and Agent Coding tools/index.html" class="no-external">
-<p>Thoughts on the rapid refactoring of programming by AI agents, new workflows, and list of the environments I will start 2026 with !</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/2025-12-30-my thoughts on AI and Agent Coding tools/index.html" class="no-external">
-<div class="listing-date">
-2025-12-30
-</div>
-<div class="listing-author">
-Nazim Ahmed Belabbaci
-</div>
-</a>
-</div>
-</div>
-<div class="quarto-post image-right" data-index="3" data-categories="cXVhcnRvJTJDcmVzZWFyY2glMkN1cGRhdGVz" data-listing-date-sort="1762837200000" data-listing-file-modified-sort="1785185439626" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
-<div class="thumbnail"><a href="../blog/2025-11-11-stay-tuned/index.html" class="no-external">
-
-<img loading="lazy" src="../blog/2025-11-11-stay-tuned/figure.png" class="thumbnail-image">
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../blog/2025-11-11-stay-tuned/index.html" class="no-external">Hello, world</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('cXVhcnRv'); return false;">quarto</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('cmVzZWFyY2g='); return false;">research</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dXBkYXRlcw=='); return false;">updates</div>
-
-</div>
-<div class="delink listing-description"><a href="../blog/2025-11-11-stay-tuned/index.html" class="no-external">
-<p>First post! I’ll use this space for short notes, stay tuned !</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../blog/2025-11-11-stay-tuned/index.html" class="no-external">
-<div class="listing-date">
-2025-11-11
-</div>
-<div class="listing-author">
-Nazim Ahmed Belabbaci
-</div>
-</a>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -801,5 +665,5 @@ Nazim Ahmed Belabbaci
 
 
 
-<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>
