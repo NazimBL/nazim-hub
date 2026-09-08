@@ -1,4 +1,5 @@
 title,src,url,description,tags
+Three years of my own wearable data,images/projects/whoop.png,projects/whoop-selftracking/,"A 1,000-night single-subject analysis of my own Whoop export: what actually moved my sleep, and a result that turned out to be an artifact of a device upgrade rather than a finding.",Wearables; Sleep; Statistics
 Wearable hydration tracking,images/projects/wearable-hydration-gemini.png,projects/wearable-hydration/,Developing a wrist-band for non-invasive and real-time hydration tracking. This is a continuation of my 2nd Masters.,Wearables; AI; Health
 Hajj pilgrims monitoring from wearable data,images/projects/hajj-wearable.png,https://pmc.ncbi.nlm.nih.gov/articles/PMC12150694/,"Here we used data collected from different wearable sensors and explored the possibility to predict multiple health contexts, including physical tiredness, emotional mood, and activity type. ",Wearables; AI; Health
 Early detection of COVID-19 using wearable data,images/projects/covid.png,projects/wearable-covid-19/,Using consumer wearables to predict COVID-19 before symptoms appear.,Wearables; AI; COVID

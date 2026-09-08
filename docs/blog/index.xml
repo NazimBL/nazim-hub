@@ -10,7 +10,128 @@
 <atom:link href="https://nazimbl.github.io/nazim-hub/blog/index.xml" rel="self" type="application/rss+xml"/>
 <description>I am a Research Engineer/Scientist with a solid background in electronics and software/hardware integration. My work focuses on applying AI and biosensing to develop reliable (and cool) wearable health monitoring systems. I am always exploring innovative ways to translate technological advances into meaningful healthcare impact.</description>
 <generator>quarto-1.10.18</generator>
-<lastBuildDate>Sun, 07 Jun 2026 04:00:00 GMT</lastBuildDate>
+<lastBuildDate>Tue, 01 Sep 2026 04:00:00 GMT</lastBuildDate>
+<item>
+  <title>I Optimised Everything for Three Years. But all I had to fix was Bedtime.</title>
+  <dc:creator>Nazim Ahmed Belabbaci</dc:creator>
+  <link>https://nazimbl.github.io/nazim-hub/blog/2026-09-01--it-was-bedtime/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>I view the human body as the most complex engineered system we know, and for three years I treated my own like one. I wore a Whoop every night from August 2023 to August 2026 and ran an ongoing, badly-controlled experiment on myself.</p>
+<p>I stopped stimulants. I added supplements and melatonin, the usual list. I rebuilt my gym routine more than once. I worked on sleep hygiene: no screens in bed, ear plugs, morning light, meditation. Every one of those the Whoop app asks you about each morning, and I answered honestly for a thousand mornings.</p>
+<p>Then I exported the whole record : 1009 cycles (whoop daily records), 1110 sleeps, 1038 workouts, 12,206 journal answers and asked the obvious question. <strong>Which of these actually did anything?</strong></p>
+<p>The answer took a detour through a result that turned out to be an illusion, and then landed somewhere I was not expecting and had never measured.</p>
+<section id="the-detour" class="level2">
+<h2 class="anchored" data-anchor-id="the-detour">The detour</h2>
+<p>The first thing I noticed was not about my habits at all.</p>
+<p>Over three years my HRV (Heart rate variability) fell by 8.3 ms (milliseconds) per year, from 97 ms to 65 ms by quarter. A third of it, gone. My recovery score (The Whoop metric that measures “freshness/readiness”) over the same period went <em>up</em> by 1.7 points a year.</p>
+<p>That is not a rounding error. HRV is the biggest single input to that score. One number said I had lost a third of my stress-regulation capacity (lower HRV); the other said I was very slightly better than before (higher recovery).</p>
+<p>Then the comparison that made me sit up. Within a quarter, HRV and recovery correlate at <strong>r = +0.80</strong>: day to day, the score tracks HRV almost perfectly. Between quarters, <strong>r = −0.29</strong>. Over long spans the relationship doesn’t just weaken. It inverts.</p>
+<p>I had a mechanism ready. The score is computed against a rolling personal baseline, so it answers “how are you today versus your recent self,” and it re-baselines continuously. As your recent self gets worse, the score quietly redefines what a 60 means.</p>
+<p>So I fitted it, recovery as a function of today’s HRV and resting heart rate plus a trailing baseline of each, sweeping the baseline window. The fit peaked sharply at <strong>30 days</strong>. Read the two HRV terms together and you get a long-run sensitivity of <strong>−0.28 points per millisecond</strong>. Negative. Not weak, not noisy: backwards.</p>
+<p>Then the check that convinced me. If that model is right, at my measured HRV slope the score should drift <em>up</em> by +2.3 points a year. It actually drifted up by <strong>+1.68</strong>. A model fitted to daily wobble had predicted a three-year trend it was never shown.</p>
+<p>Every diagnostic passed. I thought I had something.</p>
+</section>
+<section id="what-killed-it" class="level2">
+<h2 class="anchored" data-anchor-id="what-killed-it">What killed it</h2>
+<p>I took a step back and tried to figure out other co-founders or variables, environmental changes I should have considered in the analysis and found the problem: I’d forgotten I switched devices partway through the study, and my model was quietly averaging together three years of data from two different wearables.</p>
+<p>My Whoop 4 was swapped for a Whoop 5 about two-thirds of the way through. Split by device instead of pooled together, here’s what the same model shows.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Fit</th>
+<th>n</th>
+<th>Long-run sensitivity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pooled all together</td>
+<td>967</td>
+<td><strong>−0.281</strong></td>
+</tr>
+<tr class="even">
+<td>Older device only</td>
+<td>704</td>
+<td>−0.273</td>
+</tr>
+<tr class="odd">
+<td><strong>Newer device only</strong></td>
+<td>256</td>
+<td><strong>+0.686</strong></td>
+</tr>
+<tr class="even">
+<td>2024 alone (one device, quiet year)</td>
+<td>298</td>
+<td>+0.048</td>
+</tr>
+</tbody>
+</table>
+<p>The sign flips. And the newer-device interval excludes zero <em>and</em> excludes −0.28, in the opposite direction. The between-quarter r = −0.29 that started the whole thing was never even significant: p = 0.34 on thirteen quarterly means. At monthly resolution, the correlation is <strong>positive inside both eras</strong> (+0.43 and +0.68) and vanishes when pooled.</p>
+<p>Here is the whole mechanism, in two lines:</p>
+<blockquote class="blockquote">
+<p><strong>Older device:</strong> mean HRV 91.4 ms, mean recovery 59.0 <strong>Newer device:</strong> mean HRV 69.0 ms, mean recovery 62.4</p>
+</blockquote>
+<p>The new one reads lower HRV and gives a higher score. Two clouds of points, one shifted down and to the right of the other. Draw a single line through both and the relationship inside each of them disappears.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://nazimbl.github.io/nazim-hub/blog/2026-09-01--it-was-bedtime/fig10_era_split.png" class="img-fluid figure-img"></p>
+<figcaption>Each point is one calendar month. Inside each device era the recovery score tracks HRV positively. Pooled across the two, it flattens to nothing, and the transfer function fitted on the pooled record reports a sensitivity with the opposite sign from what the newer device actually shows.</figcaption>
+</figure>
+</div>
+<p>The inversion exists in neither device. It exists only in the union.</p>
+<p>The lesson is narrow and usable: <strong>before you interpret any long trend in self-tracked data, list every date the instrument could have changed, and refit inside each segment.</strong> Hardware swaps, firmware updates, a new sleep-staging model. If a result only exists in the pooled fit, it is a property of the pooling, not of you.</p>
+</section>
+<section id="the-thing-that-was-actually-there" class="level2">
+<h2 class="anchored" data-anchor-id="the-thing-that-was-actually-there">The thing that was actually there</h2>
+<p>So: back to the original question. Of everything I had deliberately changed over three years, what moved?</p>
+<p>Honestly, not much. Screens in bed cost me about 26 minutes of sleep, real, and the largest of the lot. Melatonin looked like it was hurting until I realised I take it on nights I already expect to sleep badly, which reverses the arrow before any model sees the data. Morning light and meditation: nothing I can detect, because I did them nearly every day and left myself no comparison group.</p>
+<p>The largest effect in three years of data was in a column I had never opened.</p>
+<p>Not one of my models contained the thing the device recorded automatically every single night, on all 974 of them, without ever asking me: <strong>what time I actually fell asleep.</strong></p>
+<p>When I go to bed an hour later, I wake up only <strong>24 minutes</strong> later. I recover 40% of a late night and lose the rest. My wake time isn’t pinned by an alarm, it floats with a standard deviation of 1.8 hours.</p>
+<p>That works out to roughly 24 minutes of sleep lost per hour of delay.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="https://nazimbl.github.io/nazim-hub/blog/2026-09-01--it-was-bedtime/fig9_bedtime.png" class="img-fluid figure-img"></p>
+<figcaption>Left: sleep duration by bedtime bin, against a 01:00–02:00 reference. Monotone across six bins spanning 136 minutes. Right: where the lost sleep comes from. Deep sleep is defended and light sleep is cut, which is the textbook homeostatic ordering, reproduced here by a wrist sensor.</figcaption>
+</figure>
+</div>
+<p><strong>Bedtime alone explains 15.1%</strong> of the variation in my sleep duration. Season, fitness, where I lived, which device I wore, all of it together explains <strong>4.9%</strong>.</p>
+<p>Three years of optimising, and the biggest lever was the one decision I never wrote down.</p>
+</section>
+<section id="the-part-i-couldnt-rule-out" class="level2">
+<h2 class="anchored" data-anchor-id="the-part-i-couldnt-rule-out">The part I couldn’t rule out</h2>
+<p>The device timestamps sleep <em>onset</em>, not the moment I got into bed. So a night I spent lying awake reading the ceiling looks identical to a night I simply started late. My first draft claimed to have ruled this out: if late nights were insomnia nights, they should carry <em>more</em> wakefulness, and mine carry less.</p>
+<p>That argument is backwards, and someone had to show me. The wakefulness the device measures happens <em>after</em> sleep onset. If I’ve been awake for two hours, my sleep pressure is high, so I fall asleep hard and stay asleep. That’s exactly what I saw. <strong>The pattern I claimed as proof is the alternative explanation’s own signature.</strong></p>
+<p>So some unknown share of my late nights are ordinary bedtimes with bad latency, and this dataset can never separate them. Fixing it needs one variable I don’t have: an actual lights-out time. That’s one button press a night, and I’ve started pressing it.</p>
+</section>
+<section id="what-i-take-from-it" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-take-from-it">What I take from it</h2>
+<p>This is one person. It is not generalisable, it never was, and I would be annoyed at anyone who read it as health advice.</p>
+<p>But it is <em>my</em> n of 1, and for a decision about my own life that is often the more relevant number. What it told me is that I had the order backwards. I spent three years adding things and removing things and measuring the results with a lot of statistical care, and the thing with the biggest effect was sitting underneath all of it, unmeasured, deciding how much of the night I actually got.</p>
+<p>My sister is a psychiatrist, and she has been saying a version of this to me for years, for free, without any regressions:</p>
+<blockquote class="blockquote">
+<p><strong>First things first. Before you add stuff, take stuff away, buy supplements: just work on your sleep.</strong></p>
+</blockquote>
+<p>It took me three years, a thousand nights of data, one false positive and a fairly large amount of Newey–West standard errors to arrive at what she said over dinner.</p>
+<p>She was right. The full technical write-up (data preparation, the day-boundary bug that silently deleted 11% of my nights, the placebo calibration, and the limitations) is on the <a href="../../projects/whoop-selftracking/index.html">project page</a>.</p>
+<p>If you read this far, I genuinely appreciate it, thank you, go to bed.</p>
+
+
+</section>
+
+ ]]></description>
+  <category>wearables</category>
+  <category>sleep</category>
+  <category>statistics</category>
+  <category>research</category>
+  <guid>https://nazimbl.github.io/nazim-hub/blog/2026-09-01--it-was-bedtime/</guid>
+  <pubDate>Tue, 01 Sep 2026 04:00:00 GMT</pubDate>
+  <media:content url="https://nazimbl.github.io/nazim-hub/blog/2026-09-01--it-was-bedtime/thumbnail.png" medium="image" type="image/png" height="80" width="144"/>
+</item>
 <item>
   <title>My AI Setup: A Second Brain That Reads Like a Repo</title>
   <dc:creator>Nazim Ahmed Belabbaci</dc:creator>

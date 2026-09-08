@@ -1,59 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://nazimbl.github.io/nazim-hub/projects/wearable-hydration/index.html</loc>
-    <lastmod>2026-07-27T20:50:47.500Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nazimbl.github.io/nazim-hub/projects/vr-ms/index.html</loc>
-    <lastmod>2026-07-27T20:50:47.095Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nazimbl.github.io/nazim-hub/projects/motif-xplorer/index.html</loc>
-    <lastmod>2026-07-27T20:50:46.768Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nazimbl.github.io/nazim-hub/blog/2026-02-06-scholar-agent-room/index.html</loc>
-    <lastmod>2026-07-27T20:50:39.872Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nazimbl.github.io/nazim-hub/blog/2025-11-11-stay-tuned/index.html</loc>
-    <lastmod>2026-07-27T20:50:39.626Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nazimbl.github.io/nazim-hub/projects.html</loc>
-    <lastmod>2026-07-27T20:50:46.163Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nazimbl.github.io/nazim-hub/research.html</loc>
-    <lastmod>2026-07-27T20:50:47.508Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nazimbl.github.io/nazim-hub/index.html</loc>
-    <lastmod>2026-07-27T20:50:46.128Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nazimbl.github.io/nazim-hub/about.html</loc>
-    <lastmod>2026-08-04T23:31:09.925Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nazimbl.github.io/nazim-hub/blog/index.html</loc>
-    <lastmod>2026-07-27T20:50:40.258Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nazimbl.github.io/nazim-hub/blog/2025-12-30-my thoughts on AI and Agent Coding tools/index.html</loc>
-    <lastmod>2026-07-27T20:50:39.850Z</lastmod>
-  </url>
-  <url>
-    <loc>https://nazimbl.github.io/nazim-hub/projects/muse-bci/index.html</loc>
-    <lastmod>2026-07-27T20:50:47.026Z</lastmod>
+    <loc>https://nazimbl.github.io/nazim-hub/projects/whoop-selftracking/index.html</loc>
+    <lastmod>2026-09-08T01:47:55.495Z</lastmod>
   </url>
   <url>
     <loc>https://nazimbl.github.io/nazim-hub/projects/wearable-covid-19/index.html</loc>
     <lastmod>2026-07-27T20:50:47.158Z</lastmod>
   </url>
   <url>
+    <loc>https://nazimbl.github.io/nazim-hub/projects/muse-bci/index.html</loc>
+    <lastmod>2026-07-27T20:50:47.026Z</lastmod>
+  </url>
+  <url>
     <loc>https://nazimbl.github.io/nazim-hub/blog/2026-06-07-my-llm-as-an-os-setup/index.html</loc>
     <lastmod>2026-08-24T18:43:37.316Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nazimbl.github.io/nazim-hub/blog/2025-12-30-my thoughts on AI and Agent Coding tools/index.html</loc>
+    <lastmod>2026-07-27T20:50:39.850Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nazimbl.github.io/nazim-hub/blog/index.html</loc>
+    <lastmod>2026-07-27T20:50:40.258Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nazimbl.github.io/nazim-hub/about.html</loc>
+    <lastmod>2026-08-04T23:31:09.925Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nazimbl.github.io/nazim-hub/index.html</loc>
+    <lastmod>2026-07-27T20:50:46.128Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nazimbl.github.io/nazim-hub/research.html</loc>
+    <lastmod>2026-07-27T20:50:47.508Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nazimbl.github.io/nazim-hub/projects.html</loc>
+    <lastmod>2026-07-27T20:50:46.163Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nazimbl.github.io/nazim-hub/blog/2025-11-11-stay-tuned/index.html</loc>
+    <lastmod>2026-07-27T20:50:39.626Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nazimbl.github.io/nazim-hub/blog/2026-02-06-scholar-agent-room/index.html</loc>
+    <lastmod>2026-07-27T20:50:39.872Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nazimbl.github.io/nazim-hub/blog/2026-09-01--it-was-bedtime/index.html</loc>
+    <lastmod>2026-09-08T01:54:41.943Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nazimbl.github.io/nazim-hub/projects/motif-xplorer/index.html</loc>
+    <lastmod>2026-07-27T20:50:46.768Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nazimbl.github.io/nazim-hub/projects/vr-ms/index.html</loc>
+    <lastmod>2026-07-27T20:50:47.095Z</lastmod>
+  </url>
+  <url>
+    <loc>https://nazimbl.github.io/nazim-hub/projects/wearable-hydration/index.html</loc>
+    <lastmod>2026-07-27T20:50:47.500Z</lastmod>
   </url>
 </urlset>
