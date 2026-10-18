@@ -19,10 +19,9 @@ Fluent in both human and programming languages, Nazim holds a B.S. in Electrical
 
 # Brief Summary on My Research 
 
-My research focuses on understanding biomedical phenomena and identifying key biomarkers that distinguish physiological states, behaviors, or disease conditions. I apply artificial intelligence (coupled with this understandings not as a black box) to uncover meaningful patterns in complex health data. My work spans the full pipeline: from designing and prototyping sensor-integrated wearable devices for biomarker acquisition, to data analysis, modeling, and real-time AI deployment. 
+My research focuses on understanding biomedical phenomena, from DNA to physiology, and identifying key biomarkers that distinguish physiological states, behaviors, or disease conditions. I apply artificial intelligence (grounded in that biological understanding, not as a black box) to uncover meaningful patterns in complex health data. My work spans the full pipeline: from designing and prototyping sensor-integrated wearable devices for biomarker acquisition, to data analysis, modeling, and real-time AI deployment. 
 
-I have expertise in electronics design, embedded systems, data science, machine learning, and generative AI (diffusion models). I develop computational and edge-AI solutions for health monitoring and diagnosis.
-You can see more about my research on my [Research Page](research.qmd).
+I'm a computer engineer by training, and today most of my work is computational: designing multi-omics pipelines that integrate DNA, RNA, and chromatin data, often at single-cell resolution, and building AI models on top of them. Each omics layer captures one facet of the same biology; integrating them is how we start to see the system as a whole rather than one part at a time. You can read more on my [Research Page](research.qmd).
 
 # Entrepreneurship & Innovation
 
