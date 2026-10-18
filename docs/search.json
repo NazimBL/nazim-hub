@@ -228,7 +228,7 @@
     "href": "research.html",
     "title": "Research",
     "section": "",
-    "text": "I have worked in multiple labs and collaborated with researchers from diverse discipline. My research addresses the design and analysis of data-driven systems for health monitoring and biomedical discovery, with a focus on wearable sensing, spectroscopy-based diagnostics, and clinically grounded machine learning.\nI also conduct computational research using high-performance computing (HPC) to analyze large-scale datasets across diverse biomedical data modalities, including clinical EHR data and multi-omic datasets.\nMy Ph.D. thesis involves an integrated framework that addresses two critical challenges in biomedical AI: data scarcity and poor generalization. My hypothesis is that by combining domain knowledge (physics-constraints), hardware–AI co-design, and generative models, we can create synthetic biomedical data to enhance sensing + modeling. My main application is a continuation of my Master’s work : A non-invasive wearable Hydration Tracking device.\nYou can explore these projects in more detail on my Projects Page. \n\nResearch focus\n\nAI for Wearables & Digital Biomarkers\n\nMultimodal Biosignal Representation Learning\n\nComputational Genomics & Transcriptomics\nComputational Spectroscopy\nClinical AI Systems & End-to-End ML Pipelines\n\n\nView my full CV here\n Google Scholar ORCID Research Gate"
+    "text": "I have worked in multiple labs and collaborated with researchers from diverse disciplines: engineering, computer science, genomics, virology, and clinical medicine. What connects all of it is one idea about the human body."
   },
   {
     "objectID": "projects.html",
@@ -439,5 +439,40 @@
     "title": "Towards wearable, non-invasive and real-time hydration tracking",
     "section": "Publications",
     "text": "Publications\n\nBelabbaci N.A., Alam M.A.U., HydroTrack: Spectroscopic Analysis Prototype Enabling Real-Time Hydration Monitoring in Wearables, IEEE EMBC 2024.\n→ Read on IEEE Xplore\nBelabbaci N.A., Wearable Hydration Monitoring Technologies: A Comprehensive Review of 100+ Studies, JMIR mHealth and uHealth 2025; 13:e60569.\n→ Read on JMIR\nMaster’s Thesis – A Prototype Smartwatch Utilizing Spectroscopy for Real-Time Monitoring of Hydration Status, UMass Lowell 2024.\n→ Download PDF"
+  },
+  {
+    "objectID": "research.html#the-body-as-an-engineered-system",
+    "href": "research.html#the-body-as-an-engineered-system",
+    "title": "Research",
+    "section": "The body as an engineered system",
+    "text": "The body as an engineered system\nI see the human body as the most complex engineered system we know, and I study it the way an engineer studies any system: layer by layer.\nAt the top is the whole system, the body. It is built from organs, organs from tissues, and tissues from cells. Inside each cell, the nucleus holds the chromosomes, and the chromosomes hold DNA, the source code. That code is transcribed into RNA, RNA is translated into proteins, and proteins carry out the functions that keep everything running.\nIf DNA is the code, the rest of the body is the hardware it runs on. Organs act as actuators. Physiological signals like heart rate, temperature, and hydration are the system’s telemetry, readable with the right sensors. Underneath, the cellular machinery runs thousands of processes in parallel, like an operating system running many threads at once. Complex, but traceable.\nI believe this system can be fundamentally studied and understood through hardware–software co-design: sensors and devices that measure the body, paired with computational and AI methods that make sense of what they measure. Everything below is that idea applied at a different layer."
+  },
+  {
+    "objectID": "research.html#learning-from-scarce-noisy-data",
+    "href": "research.html#learning-from-scarce-noisy-data",
+    "title": "Research",
+    "section": "Learning from scarce, noisy data",
+    "text": "Learning from scarce, noisy data\nBiomedical AI has a problem most AI doesn’t: there is rarely enough data, and what exists is noisy. My Ph.D. took that on directly. The same diffusion models that turn random noise into realistic images can turn it into realistic biomedical data. My hypothesis is that by combining domain knowledge (physics constraints), hardware–AI co-design, and generative models, we can create synthetic biomedical data that makes both sensing and modeling more reliable. This became my dissertation, Generative and Domain-Informed Modeling of Biomedical Signals Under Data Scarcity and Real-World Noise (UMass Lowell, 2026)."
+  },
+  {
+    "objectID": "research.html#hydration-the-underrated-vital-sign",
+    "href": "research.html#hydration-the-underrated-vital-sign",
+    "title": "Research",
+    "section": "Hydration: the underrated vital sign",
+    "text": "Hydration: the underrated vital sign\nThe other half of my Ph.D. continued my Master’s work: a non-invasive optical wearable that tracks hydration. I believe hydration is one of the most important and most undervalued health metrics we have. It shapes cognition, physical performance, and recovery, yet unlike heart rate or sleep, almost nobody measures it continuously. I led the project end to end, from the IRB protocol and data collection to machine-learning models running on the device, validated against saliva measurements."
+  },
+  {
+    "objectID": "research.html#multi-omics-reading-every-layer-of-the-code",
+    "href": "research.html#multi-omics-reading-every-layer-of-the-code",
+    "title": "Research",
+    "section": "Multi-omics: reading every layer of the code",
+    "text": "Multi-omics: reading every layer of the code\nMost of my work today sits at the bottom of the stack, in the source code itself. Each omics technology reads a different layer of the same system. The genome (DNA) is the code. Chromatin accessibility (ATAC-seq) shows which parts of that code are open and readable in a given cell. The transcriptome (RNA-seq) shows which parts are actually running. Proteins and metabolites are the output. No single layer explains a disease; integrating them, often one cell at a time, is how you start to see the system instead of a single component.\nThe goal is to turn that understanding into outcomes: better understanding and treatment of infectious disease, earlier cancer detection, and personalized health monitoring."
+  },
+  {
+    "objectID": "research.html#still-an-engineer-at-heart",
+    "href": "research.html#still-an-engineer-at-heart",
+    "title": "Research",
+    "section": "Still an engineer at heart",
+    "text": "Still an engineer at heart\nMy background is in electronics design, and I still use it: I have developed wearables by integrating sensors, firmware, and on-device AI into working prototypes. On the computational side, I build reproducible Nextflow pipelines, like my public RNA splicing pipeline, and GPU-accelerated workflows on HPC. I also build platforms that give biologists AI-powered analysis without writing code, like MotifXplorer, co-developed with the Takaku lab at the University of North Dakota.\nYou can explore these projects in more detail on my Projects Page. \n\nResearch focus\n\nComputational Genomics & Multi-omics Integration\nDeep Learning for Biomedical Data (generative models, sequence models)\nReproducible, GPU-Accelerated Analysis Pipelines\nWearables, Edge AI & Digital Biomarkers\n\n\nView my full CV here\n Google Scholar ORCID Research Gate"
   }
 ]

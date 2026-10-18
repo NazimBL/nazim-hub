@@ -134,7 +134,17 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    
+    <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#the-body-as-an-engineered-system" id="toc-the-body-as-an-engineered-system" class="nav-link active" data-scroll-target="#the-body-as-an-engineered-system">The body as an engineered system</a></li>
+  <li><a href="#learning-from-scarce-noisy-data" id="toc-learning-from-scarce-noisy-data" class="nav-link" data-scroll-target="#learning-from-scarce-noisy-data">Learning from scarce, noisy data</a></li>
+  <li><a href="#hydration-the-underrated-vital-sign" id="toc-hydration-the-underrated-vital-sign" class="nav-link" data-scroll-target="#hydration-the-underrated-vital-sign">Hydration: the underrated vital sign</a></li>
+  <li><a href="#multi-omics-reading-every-layer-of-the-code" id="toc-multi-omics-reading-every-layer-of-the-code" class="nav-link" data-scroll-target="#multi-omics-reading-every-layer-of-the-code">Multi-omics: reading every layer of the code</a></li>
+  <li><a href="#still-an-engineer-at-heart" id="toc-still-an-engineer-at-heart" class="nav-link" data-scroll-target="#still-an-engineer-at-heart">Still an engineer at heart</a></li>
+  </ul>
+</nav>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
@@ -162,9 +172,30 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>I have worked in multiple labs and collaborated with researchers from diverse discipline. My research addresses the design and analysis of data-driven systems for health monitoring and biomedical discovery, with a focus on wearable sensing, spectroscopy-based diagnostics, and clinically grounded machine learning.</p>
-<p>I also conduct computational research using high-performance computing (HPC) to analyze large-scale datasets across diverse biomedical data modalities, including clinical EHR data and multi-omic datasets.</p>
-<p>My Ph.D.&nbsp;thesis involves an integrated framework that addresses two critical challenges in biomedical AI: data scarcity and poor generalization. My hypothesis is that by combining domain knowledge (physics-constraints), hardware–AI co-design, and generative models, we can create synthetic biomedical data to enhance sensing + modeling. My main application is a continuation of my Master’s work : A non-invasive wearable Hydration Tracking device.</p>
+<p>I have worked in multiple labs and collaborated with researchers from diverse disciplines: engineering, computer science, genomics, virology, and clinical medicine. What connects all of it is one idea about the human body.</p>
+<section id="the-body-as-an-engineered-system" class="level2">
+<h2 class="anchored" data-anchor-id="the-body-as-an-engineered-system">The body as an engineered system</h2>
+<p>I see the human body as the most complex engineered system we know, and I study it the way an engineer studies any system: layer by layer.</p>
+<p>At the top is the whole system, the body. It is built from organs, organs from tissues, and tissues from cells. Inside each cell, the nucleus holds the chromosomes, and the chromosomes hold DNA, the source code. That code is transcribed into RNA, RNA is translated into proteins, and proteins carry out the functions that keep everything running.</p>
+<p>If DNA is the code, the rest of the body is the hardware it runs on. Organs act as actuators. Physiological signals like heart rate, temperature, and hydration are the system’s telemetry, readable with the right sensors. Underneath, the cellular machinery runs thousands of processes in parallel, like an operating system running many threads at once. Complex, but traceable.</p>
+<p>I believe this system can be fundamentally studied and understood through hardware–software co-design: sensors and devices that measure the body, paired with computational and AI methods that make sense of what they measure. Everything below is that idea applied at a different layer.</p>
+</section>
+<section id="learning-from-scarce-noisy-data" class="level2">
+<h2 class="anchored" data-anchor-id="learning-from-scarce-noisy-data">Learning from scarce, noisy data</h2>
+<p>Biomedical AI has a problem most AI doesn’t: there is rarely enough data, and what exists is noisy. My Ph.D.&nbsp;took that on directly. The same diffusion models that turn random noise into realistic images can turn it into realistic biomedical data. My hypothesis is that by combining domain knowledge (physics constraints), hardware–AI co-design, and generative models, we can create synthetic biomedical data that makes both sensing and modeling more reliable. This became my dissertation, <em>Generative and Domain-Informed Modeling of Biomedical Signals Under Data Scarcity and Real-World Noise</em> (UMass Lowell, 2026).</p>
+</section>
+<section id="hydration-the-underrated-vital-sign" class="level2">
+<h2 class="anchored" data-anchor-id="hydration-the-underrated-vital-sign">Hydration: the underrated vital sign</h2>
+<p>The other half of my Ph.D.&nbsp;continued my Master’s work: a <a href="./projects/wearable-hydration/index.html">non-invasive optical wearable that tracks hydration</a>. I believe hydration is one of the most important and most undervalued health metrics we have. It shapes cognition, physical performance, and recovery, yet unlike heart rate or sleep, almost nobody measures it continuously. I led the project end to end, from the IRB protocol and data collection to machine-learning models running on the device, validated against saliva measurements.</p>
+</section>
+<section id="multi-omics-reading-every-layer-of-the-code" class="level2">
+<h2 class="anchored" data-anchor-id="multi-omics-reading-every-layer-of-the-code">Multi-omics: reading every layer of the code</h2>
+<p>Most of my work today sits at the bottom of the stack, in the source code itself. Each omics technology reads a different layer of the same system. The genome (DNA) is the code. Chromatin accessibility (ATAC-seq) shows which parts of that code are open and readable in a given cell. The transcriptome (RNA-seq) shows which parts are actually running. Proteins and metabolites are the output. No single layer explains a disease; integrating them, often one cell at a time, is how you start to see the system instead of a single component.</p>
+<p>The goal is to turn that understanding into outcomes: better understanding and treatment of infectious disease, earlier cancer detection, and personalized health monitoring.</p>
+</section>
+<section id="still-an-engineer-at-heart" class="level2">
+<h2 class="anchored" data-anchor-id="still-an-engineer-at-heart">Still an engineer at heart</h2>
+<p>My background is in electronics design, and I still use it: I have developed wearables by integrating sensors, firmware, and on-device AI into working prototypes. On the computational side, I build reproducible Nextflow pipelines, like my public <a href="https://github.com/NazimBL/splicing-analysis-pipeline">RNA splicing pipeline</a>, and GPU-accelerated workflows on HPC. I also build platforms that give biologists AI-powered analysis without writing code, like <a href="./projects/motif-xplorer/index.html">MotifXplorer</a>, co-developed with the Takaku lab at the University of North Dakota.</p>
 <p>You can explore these projects in more detail on my <a href="./projects.html">Projects Page</a>. <!-- Remove margin under list items --></p>
 <style>
 ol {
@@ -176,21 +207,19 @@ p {
 </style>
 <p><strong>Research focus</strong></p>
 <ul>
-<li>AI for Wearables &amp; Digital Biomarkers<br>
-</li>
-<li>Multimodal Biosignal Representation Learning<br>
-</li>
-<li>Computational Genomics &amp; Transcriptomics</li>
-<li>Computational Spectroscopy</li>
-<li>Clinical AI Systems &amp; End-to-End ML Pipelines</li>
+<li>Computational Genomics &amp; Multi-omics Integration</li>
+<li>Deep Learning for Biomedical Data (generative models, sequence models)</li>
+<li>Reproducible, GPU-Accelerated Analysis Pipelines</li>
+<li>Wearables, Edge AI &amp; Digital Biomarkers</li>
 </ul>
 <center>
 <p><a href="cv/cv.pdf">View my full CV here</a></p>
 <p><a href="https://scholar.google.com/citations?view_op=list_works&amp;hl=en&amp;user=f7QBAtEAAAAJ" class="icon-link" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i> Google Scholar</a><a href="https://orcid.org/0009-0006-8380-9818" class="icon-link" target="_blank" rel="noopener"><i class="ai ai-orcid"></i> ORCID</a><a href="https://www.researchgate.net/profile/Nazim-Belabbaci" class="icon-link" target="_blank" rel="noopener"><i class="ai ai-researchgate"></i> Research Gate</a></p>
 
 
+</center></section>
 
-</center></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
