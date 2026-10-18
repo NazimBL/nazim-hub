@@ -9,11 +9,11 @@ execute:
 ---
 
 
-Welcome to my webiste! I am a researcher, engineer, scientist. See my [cv](cv/cv.pdf) for more details.
+Welcome to my website! I'm an engineer-scientist working on translational biomedical AI. See my [CV](cv/cv.pdf) for details.
 
 # Short Bio
 
-Fluent in both human and programming languages, Nazim holds a B.S. in Electrical and Electronics Engineering and an M.Eng. in Computer Engineering from the University of Boumerdès [Institute of Electrical and Electronics Engineering](https://igee.univ-boumerdes.dz/En/index.html). He worked as an Embedded Software Engineer and later co-founded Deadline Technologies and Deadline Store, gaining hands-on experience in prototyping and product development. After completing a year of biomedical engineering and research studies at the [University of North Dakota](https://engineering.und.edu/academics/biomedical/index.html), he joined the [University of Massachusetts Lowell](https://www.uml.edu/sciences/computer-science/), where he earned an M.S. and Ph.D in Computer Science. His research lies at the intersection of embedded systems, artificial intelligence, and biomedical sensing.
+Fluent in both human and programming languages, Nazim holds a B.S. in Electrical and Electronics Engineering and an M.Eng. in Computer Engineering from the University of Boumerdès [Institute of Electrical and Electronics Engineering](https://igee.univ-boumerdes.dz/En/index.html). He worked as an Embedded Software Engineer and later co-founded Deadline Technologies and Deadline Store, gaining hands-on experience in prototyping and product development. After completing a year of biomedical engineering and research studies at the [University of North Dakota](https://engineering.und.edu/academics/biomedical/index.html), he joined the [University of Massachusetts Lowell](https://www.uml.edu/sciences/computer-science/), where he earned an M.S. and Ph.D in Computer Science. His research sits at the intersection of embedded systems, machine learning, and human biology. He is currently a Postdoctoral Research Fellow at Beth Israel Deaconess Medical Center (BIDMC), a Harvard Medical School teaching hospital in Boston, where he builds GPU-accelerated multi-omics pipelines and deep-learning models for infectious disease research.
 
 
 
@@ -29,16 +29,9 @@ You can see more about my research on my [Research Page](research.qmd).
 I’ve participated in several entrepreneurial and product-driven engineering efforts. In 2019 I co-founded Deadline Technologies, where I produced [development boards](https://www.linkedin.com/feed/update/urn:li:activity:6821393409236844544/) for academic and industrial use. This experience involved full product lifecycle: PCB design, firmware, marketing, and direct sales.
 I also co-founded [Deadline Store](https://www.facebook.com/thedeadlinestore/), an electronics retail and community initiative that helped make maker tools and components more accessible to students and builders in Algeria.
 
-Today, I serve as a technical advisor to [BnBe Technologies](https://bnbetechnologies.com/), an Algerian IoT and embedded-systems engineering company focused on product development and applied electronics.
-
 # Quantitative Trading & Market Analysis
 
-When I need a break from research, I like to stretch my mind in a different direction by analyzing financial markets. What began as a casual interest in technical analysis grew into a deeper study of market structure and time-series modeling. I enjoy analyzing price action and how traders’ expectations about future price movement are built into option prices (IV).
-
-As part of this interest, I experimented with small algorithms for swing-trading signals and multi-indicator strategies, and I have built tools such as an [automated generator for TradingView](https://github.com/NazimBL/VolatilityHorizons) that visualize expected moves from option chain data.  
-
-Although this remains a personal hobby, it aligns well with the analytical mindset I bring to my research : identifying patterns, testing hypotheses, building models, and evaluating their performance over time.
-
+When I need a break from research, I analyze financial markets: price action, time-series modeling, and how expectations about future moves get priced into options (IV). I built an [automated TradingView generator](https://github.com/NazimBL/VolatilityHorizons) that visualizes expected moves from option chain data. It's a hobby, but it runs on the same loop as my research: identifying patterns, testing hypotheses, building models, and evaluating them over time.
 
 Outside research, I enjoy going to the gym, watching sports, traveling, writing, and I like to think I'm pretty good at soccer and pool.
 
