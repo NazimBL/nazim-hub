@@ -1,6 +1,6 @@
 ---
 title: "Nazim Belabbaci"
-image: "images/circular_crop_pdp.drawio.png"   # make sure this file exists
+image: "images/headshot_2026.png"   # make sure this file exists
 execute:
   echo: false
   warning: false
