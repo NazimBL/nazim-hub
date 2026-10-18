@@ -36,7 +36,7 @@ The goal is to turn that understanding into outcomes: better understanding and t
 
 ## Still an engineer at heart
 
-My background is in electronics design, and I still use it: I have developed wearables by integrating sensors, firmware, and on-device AI into working prototypes. On the computational side, I build reproducible Nextflow pipelines, like my public [RNA splicing pipeline](https://github.com/NazimBL/splicing-analysis-pipeline), and GPU-accelerated workflows on HPC. I also build platforms that give biologists AI-powered analysis without writing code, like [MotifXplorer](projects/motif-xplorer/index.qmd), co-developed with the Takaku lab at the University of North Dakota.
+My background is in electronics design, and I still use it: I have developed wearables by integrating sensors, firmware, and on-device AI into working prototypes. On the computational side, I build reproducible Nextflow pipelines, like my open-source [RNA splicing pipeline](https://github.com/NazimBL/splicing-analysis-pipeline), and GPU-accelerated workflows on HPC. I also build platforms that give biologists AI-powered analysis without writing code, like [MotifXplorer](projects/motif-xplorer/index.qmd), co-developed with the Takaku lab at the University of North Dakota.
 
 You can explore these projects in more detail on my [Projects Page](projects.qmd).
 <!-- Remove margin under list items -->
