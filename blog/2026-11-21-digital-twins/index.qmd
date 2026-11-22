@@ -1,6 +1,6 @@
 ---
-title: "Your Digital Twin Doesn't Need to Be a Hologram"
-description: "What a digital twin actually is in medicine, and the one use I'd bet on: giving every trial participant an untreated copy of themselves."
+title: "Digital Twins in Clinical Trials"
+description: "A simple explanation, and a real example I'm working on."
 date: 2026-11-21
 categories: [AI, clinical trials, digital twins, research]
 image: thumbnail.png
